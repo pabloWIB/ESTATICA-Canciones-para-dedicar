@@ -2,7 +2,7 @@
 
 <img src="IMG/459678995_1178872319858855_5714225179688900063_n.jpg">
 
-<h2 align="center">Página: <a href="https://estatica-canciones-para-dedicar.vercel.app/">canciones.com</a></h2>
+<h2 align="center">Página: <a href="https://canciones-ia.vercel.app/">canciones.com</a></h2>
 
 <h2 >Tecnologías usadas👨🏻‍💻</h2>
 <br>
