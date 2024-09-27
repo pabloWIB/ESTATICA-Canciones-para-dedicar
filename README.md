@@ -18,7 +18,7 @@
 <h4>Apps:</h4>
 <img src="https://skillicons.dev/icons?i=figma" />
 
-<h1>Modern LogIn</h1>
+<h1>Canciones para dedicar</h1>
 
 <p>Bienvenido al proyecto Canciones para Dedicar con IA. Este sitio permite crear canciones personalizadas mediante inteligencia artificial, facilitando la dedicación de canciones de manera rápida y sencilla.</p>
 
