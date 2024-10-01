@@ -1,6 +1,6 @@
 <h2 align="center">Diseño Figma: <a href="https://www.figma.com/design/Ir0zO6uEfChEsAdEFWfogE/Cancionesparadedicar?t=Dd2Umq7QV8PAjlEc-0">Maquetado en Figma</a></h2>
 
-<img src="IMG/459678995_1178872319858855_5714225179688900063_n.jpg">
+<img src="IMG/hero.jpg">
 
 <h2 align="center">Página: <a href="https://canciones-ia.vercel.app/">canciones.com</a></h2>
 
