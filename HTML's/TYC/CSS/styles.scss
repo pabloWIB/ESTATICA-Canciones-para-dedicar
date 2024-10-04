@@ -15,8 +15,8 @@ $DarkBlue3: hsl(233, 26%, 24%, 0.2);
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #d56f86;
-  background-image: url('../IMG/Group.svg') ;
+  background-color: #fad5de;
+  background-image: url("../IMG/Group.svg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -25,7 +25,6 @@ body {
   .specials {
     position: relative;
     width: 100%;
-    height: 100vh;
     .backgroundColor {
       position: absolute;
       width: 100%;
@@ -35,12 +34,12 @@ body {
       display: flex;
       margin: 0 auto;
       flex-flow: column wrap;
-      nav{
+      nav {
         position: fixed;
       }
-      >:nth-child(2){
+      > :nth-child(3) {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
         max-width: 1440px;
         border-radius: 20px;
         background: white;
@@ -49,19 +48,20 @@ body {
         flex-flow: row wrap;
         align-items: center;
         place-content: center;
-        >:nth-child(1){
+        > :nth-child(1) {
           width: 95%;
           display: flex;
           flex-flow: column wrap;
           gap: 1rem;
-          p, h2{
+          p,
+          h2 {
             all: unset;
           }
-          h2{
+          h2 {
             font-size: 20px;
             font-weight: 600;
           }
-          p{
+          p {
             font-size: 16px;
             font-weight: 500;
           }
@@ -80,9 +80,49 @@ body {
       }
     }
   }
-
   footer {
-      background: transparent;
+    background: transparent;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 875px) {
+  body {
+    padding-top: 7rem;
+    .specials {
+      .backgroundColor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 21;
+        display: flex;
+        margin: 0 auto;
+        flex-flow: column wrap;
+        nav {
+          position: fixed;
+        }
+        > :nth-child(3) {
+          padding: 1rem 0rem;
+          > :nth-child(1) {
+            gap: .8rem;
+            p,
+            h2 {
+              all: unset;
+            }
+            h2 {
+              font-size: 17px;
+              font-weight: 600;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      margin-top: 1.6rem;
+    }
   }
 }
