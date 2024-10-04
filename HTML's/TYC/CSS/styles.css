@@ -37,12 +37,13 @@ body .specials .backgroundColor > :nth-child(3) {
   width: 90%;
   max-width: 1440px;
   border-radius: 20px;
-  background: white;
   padding: 1.75rem 0rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   place-content: center;
+  background: white;
+  transform: translateY(-0.25%) scale(0.99);
 }
 body .specials .backgroundColor > :nth-child(3) > :nth-child(1) {
   width: 95%;
@@ -61,6 +62,10 @@ body .specials .backgroundColor > :nth-child(3) > :nth-child(1) h2 {
 body .specials .backgroundColor > :nth-child(3) > :nth-child(1) p {
   font-size: 16px;
   font-weight: 500;
+}
+body .specials .backgroundColor .textLoadingAnimation {
+  transform: translateY(0%) scale(1);
+  transition: 0.3s;
 }
 body .specials .backgroundIMG {
   position: absolute;

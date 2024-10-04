@@ -42,12 +42,13 @@ body {
         width: 90%;
         max-width: 1440px;
         border-radius: 20px;
-        background: white;
         padding: 1.75rem 0rem;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         place-content: center;
+        background: white;
+        transform: translateY(-0.25%) scale(.99);
         > :nth-child(1) {
           width: 95%;
           display: flex;
@@ -67,6 +68,10 @@ body {
           }
         }
       }
+      .textLoadingAnimation{
+        transform: translateY(0%) scale(1);
+        transition: .3s;
+      }
     }
     .backgroundIMG {
       position: absolute;
@@ -85,6 +90,7 @@ body {
     margin-top: 2rem;
   }
 }
+
 
 @media (max-width: 875px) {
   body {
