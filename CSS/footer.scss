@@ -174,6 +174,9 @@ footer {
 @media (max-width: 875px) {
   footer {
     padding: 40px 0px;
+    br{
+      display: none;
+    }
     > :nth-child(1) {
       width: 100%;
       gap: 2.4rem;

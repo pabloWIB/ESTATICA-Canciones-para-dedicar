@@ -7,7 +7,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fad5de;
+  background-color: #f0abbc;
   background-image: url("../IMG/Group.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,5 +114,6 @@ body footer {
   }
   body footer {
     margin-top: 1.6rem;
+    background: linear-gradient(180deg, #f0abbc 0%, #f29caf 50%, #d56f86 100%);
   }
 }/*# sourceMappingURL=styles.css.map */
