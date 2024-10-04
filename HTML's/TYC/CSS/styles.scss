@@ -1,0 +1,47 @@
+@import "../../../CSS/nav.css";
+@import "../../../CSS/footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(180deg, #FFE4EA 0%, #F29CAF 50%, #D56F86 100%);
+  > :nth-child(3) {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    >:nth-child(1){
+        width: 95%;
+        padding: 1rem 0rem;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+        h2, p{
+            all: unset;
+        }
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+  }
+}
+
+footer{
+    background: transparent;
+}
