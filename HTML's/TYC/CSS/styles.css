@@ -7,6 +7,10 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(180deg, #FFE4EA 0%, #F29CAF 50%, #D56F86 100%);
@@ -37,7 +41,7 @@ body > :nth-child(3) > :nth-child(1) h2 {
   font-size: 18px;
   font-weight: 600;
 }
-body > :nth-child(3) > :nth-child(1) p {
+body > :nth-child(3) > :nth-child(1) p, body > :nth-child(3) > :nth-child(1) li {
   font-weight: 500;
   font-size: 16px;
 }
