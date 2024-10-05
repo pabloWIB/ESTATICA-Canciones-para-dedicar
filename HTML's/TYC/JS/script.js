@@ -3,7 +3,7 @@
 $(function(){
     setTimeout(function(){
         $("#textLoading").addClass("textLoadingAnimation");
-    }, 650);
+    }, 350);
 });
 
 // LOAD ANIMATIONS
