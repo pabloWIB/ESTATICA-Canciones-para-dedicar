@@ -35,16 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // BURGER CLICK
 
-// const nav = document.getElementById('nav');
+const nav = document.getElementById('nav');
     
-// function scrollValue() {
-//     var scroll = window.scrollY;
-//     if (scroll < 20) {
-//         nav.classList.remove('edit');
-//     } else {
-//         nav.classList.add('edit');
-//     }
-// }
+function scrollValue() {
+    var scroll = window.scrollY;
+    if (scroll < 20) {
+        nav.classList.remove('edit');
+    } else {
+        nav.classList.add('edit');
+    }
+}
 
 window.addEventListener('scroll', scrollValue);
 

@@ -22,7 +22,7 @@ body {
   position: relative;
   width: 100%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6.5rem;
   z-index: 1;
   overflow: hidden;
   > :nth-child(1) {
@@ -42,19 +42,20 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 5rem;
     width: 90%;
     max-width: 1440px;
-    background: red;
     margin: 0 auto;
-    >:nth-child(1){
+    transform: translateY(-5%) scale(.9);
+    opacity: 0%;
+    transition: 1s;
+    > :nth-child(1) {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
       justify-content: center;
       gap: 4rem;
       width: 90%;
-      background: rgb(177, 152, 152);
       margin: 0 auto;
       > :nth-child(1) {
         display: flex;
@@ -74,8 +75,73 @@ body {
           font-weight: 500;
         }
       }
-      // > :nth-child(2) {
-      // }
+      aside {
+        .ag-timeline {
+          display: flex;
+          flex-flow: column wrap;
+          position: relative;
+          justify-content: flex-start;
+          margin: 0 auto;
+          width: 95%;
+          .ag-timeline_line {
+            width: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90%;
+            .ag-timeline_line-progress {
+              width: 100%;
+              height: 20%;
+              background-color: #d06b81;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+              border-bottom-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+            }            
+          }
+          .ag-timeline_list {
+            padding-left: 4%;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 3.5rem;
+            .ag-timeline_item {
+              display: flex;
+              flex-flow: column wrap;
+              margin: 0 auto;
+              width: 100%;
+              .ag-timeline-card_item {
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1rem;
+                h2,
+                h3,
+                p {
+                  all: unset;
+                  position: relative;
+                }
+                h2, h3{
+                  font-weight: 600;
+                }
+                h2{
+                  font-size: 18px;
+                }
+                h3{
+                  font-size: 17px;
+                }
+                p{
+                  font-size: 16px;
+                }
+                > div {
+                  img {
+                    width: 100%;
+                    max-width: 75px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       > :nth-child(3) {
         display: flex;
         flex-flow: row wrap;
@@ -119,67 +185,85 @@ body {
       }
     }
   }
+  .contentEmpresasEdit{
+    transform: translateY(0%) scale(.9);
+    opacity: 100%;
+    transition: 1s;
+  }
 }
 
 footer {
   z-index: 10;
 }
 
-.ag-timeline {
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-  justify-content: flex-start;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.ag-timeline .ag-timeline_line {
-  width: 10px;
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 1%;
-  height: 95%;
-}
-
-.ag-timeline_line-progress {
-  width: 100%;
-  height: 20%;
-  background-color: #D06B81;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.contain-lists {
-  display: flex;
-  flex-flow: column wrap;
-  }
-
-.ag-timeline_list {
-  display: flex;
-  margin: 0 auto;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  width: 100%;
-  background-color: orange;
-}
-
-
-.ag-timeline_item {
-  display: flex;
-  flex-flow: column wrap;
-  flex: .97;
-  background: red;
-  gap: 20rem;
-
-}
-
-.ag-timeline-card_item{
-  background: peru;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1rem;
+@media (max-width: 875px){
+  .contentEmpresas {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    > :nth-child(2) {
+      gap: 4rem;
+      > :nth-child(1) {
+        gap: 4rem;
+        > :nth-child(1) {
+          gap: .8rem;
+          h1 {
+            font-size: 26px;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        }
+        aside {
+          .ag-timeline {
+            width: 95%;
+            .ag-timeline_line {
+              width: 7.5px;
+            }
+            .ag-timeline_list {
+              gap: 3.5rem;
+              .ag-timeline_item {
+                .ag-timeline-card_item {
+                  gap: 1rem;
+                  h2{
+                    font-size: 16px;
+                  }
+                  h3{
+                    font-size: 15px;
+                  }
+                  p{
+                    font-size: 14px;
+                  }
+                  > div {
+                    img {
+                      max-width: 60px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        > :nth-child(3) {
+          gap: 4.4rem;
+          > div {
+            img {
+              max-width: 56px;
+            }
+          }
+        }
+        > :nth-child(4) {
+          gap: 1rem;
+          h2 {
+            font-size: 16px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }  
 }
