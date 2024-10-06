@@ -15,125 +15,89 @@ $DarkBlue3: hsl(233, 26%, 24%, 0.2);
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f0abbc;
-  background-image: url("../IMG/Group.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-  position: relative;
-  padding-top: 8.5rem;
-  .specials {
+  background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #d56f86 100%);
+  > :nth-child(3) {
     position: relative;
     width: 100%;
-    .backgroundColor {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+    overflow: hidden;
+    > :nth-child(1) {
       position: absolute;
-      width: 100%;
       top: 0;
       right: 0;
-      z-index: 21;
-      display: flex;
-      margin: 0 auto;
-      flex-flow: column wrap;
-      nav {
-        position: fixed;
+      width: 100%;
+      z-index: 1;
+      img {
+        width: 100%;
+        transform: translateX(2%);
+        opacity: 80%;
       }
-      > :nth-child(3) {
+    }
+    > :nth-child(2) {
+      position: relative;
+      width: 90%;
+      max-width: 1440px;
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      z-index: 10;
+      transform: scale(0.99);
+      > :nth-child(1) {
+        width: 95%;
         margin: 0 auto;
-        width: 90%;
-        max-width: 1440px;
-        border-radius: 20px;
-        padding: 1.75rem 0rem;
+        padding: 2.5% 0%;
         display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        place-content: center;
-        background: white;
-        transform: translateY(-0.25%) scale(.99);
+        flex-flow: column wrap;
+        gap: 1rem;
+        p,
+        h2 {
+          all: unset;
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+    .textLoadingAnimation {
+      transform: translateY(0%) scale(1);
+      transition: 0.3s;
+    }
+  }
+}
+
+footer {
+  background: transparent;
+}
+
+@media (max-width: 875px) {
+  body {
+    > :nth-child(3) {
+      > :nth-child(2) {
         > :nth-child(1) {
-          width: 95%;
-          display: flex;
-          flex-flow: column wrap;
-          gap: 1rem;
+          gap: .8rem;
           p,
           h2 {
             all: unset;
           }
           h2 {
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 600;
           }
           p {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
           }
         }
       }
-      .textLoadingAnimation{
-        transform: translateY(0%) scale(1);
-        transition: .3s;
-      }
-    }
-    .backgroundIMG {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      height: auto;
-      z-index: 20;
-      img {
-        width: 100%;
-      }
-    }
-  }
-  footer {
-    background: linear-gradient(rgba(240, 171, 188, 0.1) 0%, rgba(186, 89, 110, 1) 100%); /* Linear gradient with opacity */
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 875px) {
-  body {
-    padding-top: 7rem;
-    .specials {
-      .backgroundColor {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 21;
-        display: flex;
-        margin: 0 auto;
-        flex-flow: column wrap;
-        nav {
-          position: fixed;
-        }
-        > :nth-child(3) {
-          padding: 1rem 0rem;
-          > :nth-child(1) {
-            gap: 0.8rem;
-            p,
-            h2 {
-              all: unset;
-            }
-            h2 {
-              font-size: 17px;
-              font-weight: 600;
-            }
-            p {
-              font-size: 14px;
-              font-weight: 500;
-            }
-          }
-        }
-      }
-    }
-    footer {
-      margin-top: 1.6rem;
-      background: linear-gradient(
-        180deg,
-        #f0abbc 0%,
-        #f29caf 50%,
-        #d56f86 100%
-      );
     }
   }
 }
