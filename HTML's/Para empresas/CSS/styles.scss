@@ -21,10 +21,9 @@ body {
 .contentEmpresas {
   position: relative;
   width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 6.5rem;
   z-index: 1;
   overflow: hidden;
+  padding: 2.5rem;
   > :nth-child(1) {
     position: absolute;
     top: 0;
@@ -46,7 +45,7 @@ body {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    transform: translateY(-5%) scale(.9);
+    transform: translateY(-10%) scale(.9);
     opacity: 0%;
     transition: 1s;
     > :nth-child(1) {
@@ -186,7 +185,7 @@ body {
     }
   }
   .contentEmpresasEdit{
-    transform: translateY(0%) scale(.9);
+    transform: translateY(0%) scale(1);
     opacity: 100%;
     transition: 1s;
   }
@@ -198,8 +197,10 @@ footer {
 
 @media (max-width: 875px){
   .contentEmpresas {
-    margin-top: 1.5rem;
-    margin-bottom: 5rem;
+    padding: 2rem;
+    br{
+      display: none;
+    }
     > :nth-child(2) {
       gap: 4rem;
       > :nth-child(1) {
@@ -220,6 +221,7 @@ footer {
               width: 7.5px;
             }
             .ag-timeline_list {
+              padding-left: 8%;
               gap: 3.5rem;
               .ag-timeline_item {
                 .ag-timeline-card_item {
@@ -244,7 +246,7 @@ footer {
           }
         }
         > :nth-child(3) {
-          gap: 4.4rem;
+          gap: 2.5rem;
           > div {
             img {
               max-width: 56px;
