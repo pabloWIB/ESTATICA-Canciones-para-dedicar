@@ -1,5 +1,5 @@
-@import '../../../CSS/nav.css';
-@import '../../../CSS/footer.css';
+@import "../../../CSS/nav.css";
+@import "../../../CSS/footer.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
@@ -7,5 +7,106 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, #FFF 0%, #FFE9EE 100%);
+  background: linear-gradient(180deg, #fff 0%, #ffe9ee 100%);
+}
+
+.contentEmpresas {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.contentEmpresas > :nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.contentEmpresas > :nth-child(1) img {
+  width: 100%;
+}
+.contentEmpresas > :nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 90%;
+  max-width: 1440px;
+  background: red;
+  margin: 0 auto;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 90%;
+  background: rgb(177, 152, 152);
+  margin: 0 auto;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  gap: 1rem;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h1,
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
+  all: unset;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
+  font-size: 27px;
+  font-weight: 500;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(3) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5.5rem;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(3) > div img {
+  width: 100%;
+  max-width: 70px;
+  max-height: 100px;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2,
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3,
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) p {
+  all: unset;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2,
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3,
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) span {
+  font-weight: 600;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2 {
+  font-size: 18px;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3 {
+  font-size: 17px;
+}
+.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) p {
+  font-size: 15px;
+}
+
+footer {
+  z-index: 10;
 }/*# sourceMappingURL=styles.css.map */

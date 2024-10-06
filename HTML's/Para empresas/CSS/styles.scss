@@ -1,9 +1,9 @@
-@import '../../../CSS/nav.css';
-@import '../../../CSS/footer.css';
+@import "../../../CSS/nav.css";
+@import "../../../CSS/footer.css";
 
 $DarkBlue: hsl(233, 26%, 24%);
-$DarkBlue2: hsl(233, 26%, 24%, .9);
-$DarkBlue3: hsl(233, 26%, 24%, .2);
+$DarkBlue2: hsl(233, 26%, 24%, 0.9);
+$DarkBlue3: hsl(233, 26%, 24%, 0.2);
 
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
@@ -15,5 +15,110 @@ $DarkBlue3: hsl(233, 26%, 24%, .2);
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, #FFF 0%, #FFE9EE 100%);
+  background: linear-gradient(180deg, #fff 0%, #ffe9ee 100%);
+}
+
+.contentEmpresas {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  z-index: 1;
+  overflow: hidden;
+  > :nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+  }
+  > :nth-child(2) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1440px;
+    background: red;
+    margin: 0 auto;
+    >:nth-child(1){
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      width: 90%;
+      background: rgb(177, 152, 152);
+      margin: 0 auto;
+      > :nth-child(1) {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        gap: 1rem;
+        h1,
+        h2 {
+          all: unset;
+        }
+        h1 {
+          font-size: 36px;
+          font-weight: 700;
+        }
+        h2 {
+          font-size: 27px;
+          font-weight: 500;
+        }
+      }
+      > :nth-child(2) {
+      }
+      > :nth-child(3) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5.5rem;
+        > div {
+          img {
+            width: 100%;
+            max-width: 70px;
+            max-height: 100px;
+          }
+        }
+      }
+      > :nth-child(4) {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        h2,
+        h3,
+        p {
+          all: unset;
+        }
+        h2,
+        h3,
+        span {
+          font-weight: 600;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        h3 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  z-index: 10;
 }

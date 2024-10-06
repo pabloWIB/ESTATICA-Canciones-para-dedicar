@@ -86,11 +86,10 @@ body {
     }
   }
   footer {
-    background: #f0abbc;
+    background: linear-gradient(rgba(240, 171, 188, 0.1) 0%, rgba(186, 89, 110, 1) 100%); /* Linear gradient with opacity */
     margin-top: 2rem;
   }
 }
-
 
 @media (max-width: 875px) {
   body {

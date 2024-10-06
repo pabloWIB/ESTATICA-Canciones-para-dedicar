@@ -79,7 +79,7 @@ body .specials .backgroundIMG img {
   width: 100%;
 }
 body footer {
-  background: #f0abbc;
+  background: linear-gradient(rgba(240, 171, 188, 0.1) 0%, rgb(186, 89, 110) 100%); /* Linear gradient with opacity */
   margin-top: 2rem;
 }
 
