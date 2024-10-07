@@ -9,11 +9,10 @@
   border-radius: 25px;
   box-shadow: 0px 0px 6.5px 0px #b8b8b8;
   padding: 1.5rem 0rem;
-  margin-bottom: 3rem;
-  transform: translateY(50px);
-    opacity: 0%;
-    transition: .5s;
-    animation-delay: .3s;
+  transform: translateY(-50%);
+  opacity: 0%;
+  transition: .3s;
+  background: white;
   > :nth-child(1) {
     display: flex;
     flex-flow: column wrap;
@@ -59,17 +58,15 @@
   }
 }
 
-.animationN1{
-    transform: translateY(0px);
-    opacity: 100%;
-    transition: .5s;
-    animation-delay: .3s;
+.animationN1 {
+  transform: translateY(0px);
+  opacity: 100%;
+  transition: 0.95s;
 }
 
 @media (max-width: 875px) {
   .envio_participa_beneficio {
     padding: 1.2rem 0rem;
-    margin-bottom: 2.4rem;
     > :nth-child(1) {
       gap: 2.4rem;
       > div {

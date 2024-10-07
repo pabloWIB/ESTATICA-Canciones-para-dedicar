@@ -15,7 +15,7 @@ body {
   width: 100%;
   z-index: 1;
   overflow: hidden;
-  padding: 2.5rem;
+  padding: 2.5rem 0rem;
 }
 .contentEmpresas > :nth-child(1) {
   position: absolute;
@@ -183,7 +183,7 @@ footer {
 
 @media (max-width: 875px) {
   .contentEmpresas {
-    padding: 2rem;
+    padding: 2rem 0rem;
   }
   .contentEmpresas br {
     display: none;

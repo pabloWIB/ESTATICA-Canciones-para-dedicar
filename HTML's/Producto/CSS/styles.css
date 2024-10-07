@@ -1,6 +1,6 @@
-@import '../../../CSS/nav.css';
-@import '../../../CSS/envio_participa_beneficio.css';
-@import '../../../CSS/footer.css';
+@import "../../../CSS/nav.css";
+@import "../../../CSS/envio_participa_beneficio.css";
+@import "../../../CSS/footer.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
@@ -8,4 +8,280 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, #d06b81 30.07%, #fff 100%);
+}
+
+.firstSection {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+.firstSection > :nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.firstSection > :nth-child(1) img {
+  width: 100%;
+}
+.firstSection > :nth-child(2) {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+}
+.firstSection > :nth-child(2) > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  gap: 1.75rem;
+}
+.firstSection > :nth-child(2) > :nth-child(1) h1,
+.firstSection > :nth-child(2) > :nth-child(1) h2 {
+  all: unset;
+  color: white;
+}
+.firstSection > :nth-child(2) > :nth-child(1) h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.firstSection > :nth-child(2) > :nth-child(1) h2 {
+  font-size: 27px;
+  font-weight: 500;
+}
+.firstSection > :nth-child(2) > :nth-child(1) > div img {
+  width: 100%;
+  max-width: 400px;
+}
+.firstSection > :nth-child(2) .envio_participa_beneficio {
+  margin-top: -2rem;
+}
+.firstSection > :nth-child(2) > :nth-child(3) {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 7%;
+  box-shadow: 0px 0px 6.5px 0px #b8b8b8;
+  background: white;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) h2 {
+  all: unset;
+  font-size: 18px;
+  font-weight: 600;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) {
+  border-radius: 25px;
+  background: #d06b81;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.5rem 0rem;
+  margin-top: -2.5rem;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
+  all: unset;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
+  width: 100%;
+  max-width: 50px;
+}
+
+@media (max-width: 875px) {
+  .firstSection {
+    padding-top: 2rem;
+  }
+  .firstSection br {
+    display: none;
+  }
+  .firstSection > :nth-child(2) {
+    gap: 1.4rem;
+  }
+  .firstSection > :nth-child(2) > :nth-child(1) {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    gap: 1.75rem;
+  }
+  .firstSection > :nth-child(2) > :nth-child(1) h1,
+  .firstSection > :nth-child(2) > :nth-child(1) h2 {
+    all: unset;
+    color: white;
+  }
+  .firstSection > :nth-child(2) > :nth-child(1) h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .firstSection > :nth-child(2) > :nth-child(1) h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .firstSection > :nth-child(2) > :nth-child(1) > div img {
+    width: 100%;
+    max-width: 280px;
+  }
+  .firstSection > :nth-child(2) .envio_participa_beneficio {
+    margin-top: -1.6rem;
+  }
+  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) {
+    padding-top: 1.2rem;
+    padding-bottom: 5.6%;
+  }
+  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) h2 {
+    all: unset;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) {
+    padding: 1.2rem 0rem;
+    margin-top: -1.35rem;
+  }
+  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+    gap: 0.8rem;
+  }
+  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
+    all: unset;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+  }
+  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
+    max-width: 40px;
+  }
+}
+.secondSection {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 2.5rem;
+}
+.secondSection > :nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.secondSection > :nth-child(1) img {
+  width: 100%;
+}
+.secondSection > :nth-child(2) {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+}
+.secondSection > :nth-child(2) > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  gap: 1.75rem;
+}
+.secondSection > :nth-child(2) > :nth-child(1) h1,
+.secondSection > :nth-child(2) > :nth-child(1) h2 {
+  all: unset;
+  color: white;
+}
+.secondSection > :nth-child(2) > :nth-child(1) h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.secondSection > :nth-child(2) > :nth-child(1) h2 {
+  font-size: 27px;
+  font-weight: 500;
+}
+.secondSection > :nth-child(2) > :nth-child(1) > div img {
+  width: 100%;
+  max-width: 400px;
+}
+.secondSection > :nth-child(2) .envio_participa_beneficio {
+  margin-top: -2rem;
+}
+.secondSection > :nth-child(2) > :nth-child(3) {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(1) {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 7%;
+  box-shadow: 0px 0px 6.5px 0px #b8b8b8;
+  background: white;
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) h2 {
+  all: unset;
+  font-size: 18px;
+  font-weight: 600;
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(2) {
+  border-radius: 25px;
+  background: #d06b81;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.5rem 0rem;
+  transform: translateY(-50%);
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
+  all: unset;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.secondSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
+  width: 100%;
+  max-width: 50px;
 }/*# sourceMappingURL=styles.css.map */
