@@ -9,9 +9,10 @@
   border-radius: 25px;
   box-shadow: 0px 0px 6.5px 0px #b8b8b8;
   padding: 1.5rem 0rem;
-  transform: translateY(-50%);
+  transform: translateY(50px);
   opacity: 0%;
-  transition: 0.3s;
+  transition: 0.5s;
+  animation-delay: 0.3s;
   background: white;
 }
 .envio_participa_beneficio > :nth-child(1) {
@@ -59,7 +60,8 @@
 .animationN1 {
   transform: translateY(0px);
   opacity: 100%;
-  transition: 0.95s;
+  transition: 0.5s;
+  animation-delay: 0.3s;
 }
 
 @media (max-width: 875px) {

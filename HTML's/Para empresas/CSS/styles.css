@@ -1,4 +1,5 @@
 @import "../../../CSS/nav.css";
+@import "../../../CSS/TimelineLineProgress.css";
 @import "../../../CSS/footer.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
@@ -68,69 +69,6 @@ body {
 .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
   font-size: 27px;
   font-weight: 500;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline {
-  display: flex;
-  flex-flow: column wrap;
-  position: relative;
-  justify-content: flex-start;
-  margin: 0 auto;
-  width: 95%;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_line {
-  width: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 90%;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_line .ag-timeline_line-progress {
-  width: 100%;
-  height: 20%;
-  background-color: #d06b81;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list {
-  padding-left: 4%;
-  display: flex;
-  flex-flow: column wrap;
-  gap: 3.5rem;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item {
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0 auto;
-  width: 100%;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1rem;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2,
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3,
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-  all: unset;
-  position: relative;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2, .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-  font-weight: 600;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2 {
-  font-size: 18px;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-  font-size: 17px;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-  font-size: 16px;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
-  width: 100%;
-  max-width: 75px;
 }
 .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(3) {
   display: flex;
@@ -202,31 +140,6 @@ footer {
   }
   .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
     font-size: 20px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline {
-    width: 95%;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_line {
-    width: 7.5px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list {
-    padding-left: 8%;
-    gap: 3.5rem;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
-    gap: 1rem;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2 {
-    font-size: 16px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-    font-size: 15px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-    font-size: 14px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
-    max-width: 60px;
   }
   .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(3) {
     gap: 2.5rem;

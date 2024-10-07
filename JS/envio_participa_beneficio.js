@@ -12,12 +12,13 @@ function isElementInViewport(element) {
 
 // VIEWPORT FUNCTION ---
 
-// VIEWPORT ANIMATIONS 1
+// VIEWPORT ANIMATIONS 1 
 
 function toggleAnimationN1() {
-    var targetSection = document.getElementById("envio_participa_beneficio");
+    var targetSection = document.getElementById("envio_participa_beneficioSee");
+    var envio_participa_beneficio = document.getElementById('envio_participa_beneficio');
     if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
+        envio_participa_beneficio.classList.add('animationN1');
     } 
 }
 
