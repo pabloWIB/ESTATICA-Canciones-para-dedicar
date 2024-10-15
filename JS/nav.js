@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const burger = document.getElementById('burger');
     const path = document.getElementById('burgerPath');
     const overflow = document.getElementById('overflow');
+    const body = document.getElementById('body');
 
     // Estado inicial
     let isMenuOpen = false;
@@ -26,9 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isMenuOpen) {
             path.setAttribute('d', 'M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z');
             overflow.classList.add('overflowAction');
+            body.classList.add('bodyOnOverlay');
         } else {
             path.setAttribute('d', 'M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z');
             overflow.classList.remove('overflowAction');
+            body.classList.remove('bodyOnOverlay');
         }
     });
 });
