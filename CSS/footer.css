@@ -280,7 +280,6 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(3) > a img:hover {
   }
   footer > :nth-child(1) > :nth-child(5) > :nth-child(2) p,
   footer > :nth-child(1) > :nth-child(5) > :nth-child(2) a {
-    all: unset;
     font-size: 13px;
   }
   footer > :nth-child(1) > :nth-child(5) > :nth-child(3) {
