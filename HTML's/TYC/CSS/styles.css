@@ -1,9 +1,6 @@
-@import "../../../CSS/nav.css";
-@import "../../../CSS/footer.css";
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
-:root {
-  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-}
 
 body {
   background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #d56f86 100%);

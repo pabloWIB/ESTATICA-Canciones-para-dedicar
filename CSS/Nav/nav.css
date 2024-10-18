@@ -185,9 +185,10 @@ nav > :nth-child(1) > :nth-child(2) > :nth-child(2) svg {
 .overflow > :nth-child(1) a {
   all: unset;
   color: black;
+  font-weight: 600;
   cursor: pointer;
 }
-.overflow > :nth-child(1) > :nth-child(6) {
+.overflow > :nth-child(1) > :nth-child(5) {
   color: rgb(255, 255, 255);
   padding: 7.5px 15px;
   background: #d06b81;
@@ -195,7 +196,7 @@ nav > :nth-child(1) > :nth-child(2) > :nth-child(2) svg {
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
-.overflow > :nth-child(1) > :nth-child(6):hover {
+.overflow > :nth-child(1) > :nth-child(5):hover {
   transform: scale(1.07);
   transition: 0.3s;
 }

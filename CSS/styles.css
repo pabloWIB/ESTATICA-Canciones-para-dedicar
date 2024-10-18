@@ -1,6 +1,6 @@
-@import 'nav.css';
-@import 'footer.css';
-@import 'envio_participa_beneficio.css';
+@import 'Nav/nav.css';
+@import 'Footer/footer.css';
+@import 'EnParBen/envio_participa_beneficio.css';
 @import 'Fonts/fontSizes.css';
 
 :root {

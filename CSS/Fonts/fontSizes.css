@@ -9,7 +9,7 @@ h1 {
   font-weight: 600;
 }
 
-h2, h3, a, button{
+h2, h3, h4, a, button{
   font-weight: 500;
 }
 
@@ -19,6 +19,10 @@ h2 {
 
 h3 {
   font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 a{
@@ -46,8 +50,12 @@ p, span, input, select, option{
     font-size: 19px;
   }
 
-  h3 {
+  h4 {
     font-size: 17px;
+  }
+
+  h3 {
+    font-size: 15px;
   }
 
   a,
@@ -73,6 +81,10 @@ p, span, input, select, option{
     font-size: 15px;
   }
 
+  h4 {
+    font-size: 14.5px;
+  }
+
   a,
   p,
   span,
@@ -80,4 +92,8 @@ p, span, input, select, option{
   input {
     font-size: 14px;
   }
+}
+
+:root {
+  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }

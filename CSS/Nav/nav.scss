@@ -203,9 +203,10 @@ nav {
     a {
       all: unset;
       color: black;
+      font-weight: 600;
       cursor: pointer;
     }
-    > :nth-child(6) {
+    > :nth-child(5) {
       color: rgb(255, 255, 255);
       padding: 7.5px 15px;
       background: #d06b81;

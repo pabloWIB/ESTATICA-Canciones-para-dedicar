@@ -1,6 +1,5 @@
-@import '../../../CSS/nav.css';
-@import '../../../CSS/footer.css';
+@import '../../../CSS/Nav/nav.css';
+@import '../../../CSS/Footer/footer.css';
 @import '../../../CSS/Fonts/fontSizes.css';
-:root {
-  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-}/*# sourceMappingURL=styles.css.map */
+
+/* No es necesario definir los tamaños de los textos, todo esta definido en la carpeta de arriba @import '../../../CSS/Fonts/fontSizes.css'; si algo me pregunta */
