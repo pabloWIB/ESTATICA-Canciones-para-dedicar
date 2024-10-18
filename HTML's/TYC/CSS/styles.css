@@ -1,13 +1,17 @@
 @import "../../../CSS/nav.css";
 @import "../../../CSS/footer.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../../../CSS/Fonts/fontSizes.css";
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #d56f86 100%);
+}
+body a {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
 }
 body > :nth-child(3) {
   position: relative;
@@ -44,22 +48,9 @@ body > :nth-child(3) > :nth-child(2) {
 body > :nth-child(3) > :nth-child(2) > :nth-child(1) {
   width: 95%;
   margin: 0 auto;
-  padding: 2.5% 0%;
+  padding: 1.25% 0%;
   display: flex;
   flex-flow: column wrap;
-  gap: 1rem;
-}
-body > :nth-child(3) > :nth-child(2) > :nth-child(1) p,
-body > :nth-child(3) > :nth-child(2) > :nth-child(1) h2 {
-  all: unset;
-}
-body > :nth-child(3) > :nth-child(2) > :nth-child(1) h2 {
-  font-size: 20px;
-  font-weight: 600;
-}
-body > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
-  font-size: 16px;
-  font-weight: 500;
 }
 body > :nth-child(3) .textLoadingAnimation {
   transform: translateY(0%) scale(1);
@@ -69,21 +60,7 @@ body > :nth-child(3) .textLoadingAnimation {
 footer {
   background: transparent;
 }
-
-@media (max-width: 875px) {
-  body > :nth-child(3) > :nth-child(2) > :nth-child(1) {
-    gap: 0.8rem;
-  }
-  body > :nth-child(3) > :nth-child(2) > :nth-child(1) p,
-  body > :nth-child(3) > :nth-child(2) > :nth-child(1) h2 {
-    all: unset;
-  }
-  body > :nth-child(3) > :nth-child(2) > :nth-child(1) h2 {
-    font-size: 17px;
-    font-weight: 600;
-  }
-  body > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
-    font-size: 14px;
-    font-weight: 500;
-  }
+footer a {
+  text-decoration-line: none;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

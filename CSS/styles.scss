@@ -10,22 +10,5 @@ $DarkBlue3: hsl(233, 26%, 24%, .2);
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
 
-// FONT
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-  font-family: "Montserrat", sans-serif;
-  h2, h3{
-    font-weight: 600;
-  }
-  p{
-    font-weight: 500;
-  }
-}
-
-// Subtitulo h2 18 - 16 
-// Parrafo h2 16 - 14
-
-// Subtitulo h3 17 - 15
-// Parrafo h3 15 - 13

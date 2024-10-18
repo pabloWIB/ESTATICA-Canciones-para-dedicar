@@ -31,44 +31,19 @@ footer > :nth-child(1) form {
 footer > :nth-child(1) > :nth-child(1) {
   flex-flow: column wrap;
 }
-footer > :nth-child(1) > :nth-child(1) h3,
-footer > :nth-child(1) > :nth-child(1) p,
-footer > :nth-child(1) > :nth-child(1) a {
-  all: unset;
-}
-footer > :nth-child(1) > :nth-child(1) h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-footer > :nth-child(1) > :nth-child(1) p {
-  font-size: 18px;
-  font-weight: 400;
-}
 footer > :nth-child(1) > :nth-child(1) > :nth-child(3) a {
   cursor: pointer;
-  font-size: 22px;
   color: rgb(255, 255, 255);
   padding: 7.5px 15px;
   background: #db5774;
   border-radius: 30px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
-  font-weight: 500;
 }
 footer > :nth-child(1) > :nth-child(3) {
   flex-flow: column wrap;
 }
-footer > :nth-child(1) > :nth-child(3) h2,
-footer > :nth-child(1) > :nth-child(3) label {
-  all: unset;
-}
-footer > :nth-child(1) > :nth-child(3) h2 {
-  font-size: 22px;
-  font-weight: 500;
-}
 footer > :nth-child(1) > :nth-child(3) label {
   text-align: left;
-  font-size: 18px;
-  font-weight: 400;
   margin-bottom: -2rem;
 }
 footer > :nth-child(1) > :nth-child(3) .inputs-container {
@@ -101,7 +76,6 @@ footer > :nth-child(1) > :nth-child(3) .inputs-container input {
   color: white;
   border-radius: 0px 4px 4px 0px;
   cursor: pointer;
-  font-size: 18px;
   flex: 1;
 }
 footer > :nth-child(1) > :nth-child(3) .inputs-container input::-moz-placeholder {
@@ -120,13 +94,11 @@ footer > :nth-child(1) > :nth-child(3) > :nth-child(4) {
 footer > :nth-child(1) > :nth-child(3) > :nth-child(4) button {
   all: unset;
   cursor: pointer;
-  font-size: 22px;
   color: rgb(255, 255, 255);
   padding: 7.5px 55px;
   background: #db5774;
   border-radius: 30px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
-  font-weight: 500;
 }
 footer > :nth-child(1) > :nth-child(5) {
   flex-flow: row wrap;
@@ -142,12 +114,6 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(2) {
   display: flex;
   flex-flow: column wrap;
   gap: 1rem;
-}
-footer > :nth-child(1) > :nth-child(5) > :nth-child(2) p,
-footer > :nth-child(1) > :nth-child(5) > :nth-child(2) a {
-  all: unset;
-  font-weight: 400;
-  font-size: 17px;
 }
 footer > :nth-child(1) > :nth-child(5) > :nth-child(2) a {
   text-decoration: underline;
@@ -190,31 +156,11 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(3) > a img:hover {
     gap: 2rem;
     width: 90%;
   }
-  footer > :nth-child(1) > :nth-child(1) h3,
-  footer > :nth-child(1) > :nth-child(1) p,
-  footer > :nth-child(1) > :nth-child(1) a {
-    all: unset;
-  }
-  footer > :nth-child(1) > :nth-child(1) h3 {
-    font-size: 17px;
-  }
-  footer > :nth-child(1) > :nth-child(1) p {
-    font-size: 15px;
-  }
   footer > :nth-child(1) > :nth-child(1) > :nth-child(3) a {
-    font-size: 17px;
     padding: 6px 12px;
-  }
-  footer > :nth-child(1) > :nth-child(3) h2,
-  footer > :nth-child(1) > :nth-child(3) label {
-    all: unset;
-  }
-  footer > :nth-child(1) > :nth-child(3) h2 {
-    font-size: 17px;
   }
   footer > :nth-child(1) > :nth-child(3) label {
     text-align: left;
-    font-size: 14px;
     margin-bottom: -1.6rem;
   }
   footer > :nth-child(1) > :nth-child(3) .inputs-container {
@@ -243,7 +189,6 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(3) > a img:hover {
     color: white;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
-    font-size: 18px;
     flex: 1;
   }
   footer > :nth-child(1) > :nth-child(3) .inputs-container input::-moz-placeholder {
@@ -263,7 +208,6 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(3) > a img:hover {
     scale: 0.75;
   }
   footer > :nth-child(1) > :nth-child(3) > :nth-child(4) button {
-    font-size: 17px;
     padding: 6px 20px;
   }
   footer > :nth-child(1) > :nth-child(5) {
@@ -277,10 +221,6 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(3) > a img:hover {
   }
   footer > :nth-child(1) > :nth-child(5) > :nth-child(2) {
     gap: 0.8rem;
-  }
-  footer > :nth-child(1) > :nth-child(5) > :nth-child(2) p,
-  footer > :nth-child(1) > :nth-child(5) > :nth-child(2) a {
-    font-size: 13px;
   }
   footer > :nth-child(1) > :nth-child(5) > :nth-child(3) {
     margin: 0 auto;

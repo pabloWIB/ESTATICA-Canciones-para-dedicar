@@ -42,21 +42,7 @@ aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
 aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2,
 aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3,
 aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-  all: unset;
   position: relative;
-}
-aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2,
-aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-  font-weight: 600;
-}
-aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2 {
-  font-size: 18px;
-}
-aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-  font-size: 17px;
-}
-aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-  font-size: 16px;
 }
 aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
   width: 100%;
@@ -76,15 +62,6 @@ aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > 
   }
   aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
     gap: 1rem;
-  }
-  aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2 {
-    font-size: 16px;
-  }
-  aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-    font-size: 15px;
-  }
-  aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-    font-size: 14px;
   }
   aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
     max-width: 60px;

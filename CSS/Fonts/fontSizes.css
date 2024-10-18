@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h2, h3, a, button{
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a{
+  all: unset;
+}
+
+a,
+p,
+span,
+label,
+input {
+  font-size: 18px;
+}
+
+p, span, input, select, option{
+  font-weight: 400;
+}
+
+@media (max-width: 875px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  a,
+  p,
+  span,
+  label,
+  input {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  a,
+  p,
+  span,
+  label,
+  input {
+    font-size: 14px;
+  }
+}

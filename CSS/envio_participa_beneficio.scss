@@ -27,18 +27,6 @@
       display: flex;
       flex-flow: column wrap;
       gap: 1rem;
-      h3,
-      p {
-        all: unset;
-      }
-      h3 {
-        font-size: 18px;
-        font-weight: 600;
-      }
-      p {
-        font-size: 16px;
-        font-weight: 500;
-      }
       > :nth-child(3) {
         width: 100%;
         img {
@@ -77,13 +65,7 @@
         p {
           all: unset;
         }
-        h3 {
-          font-size: 16px;
-          font-weight: 600;
-        }
         p {
-          font-size: 14px;
-          font-weight: 500;
           br {
             display: none;
           }

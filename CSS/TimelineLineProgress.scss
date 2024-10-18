@@ -39,21 +39,7 @@ aside {
           h2,
           h3,
           p {
-            all: unset;
             position: relative;
-          }
-          h2,
-          h3 {
-            font-weight: 600;
-          }
-          h2 {
-            font-size: 18px;
-          }
-          h3 {
-            font-size: 17px;
-          }
-          p {
-            font-size: 16px;
           }
           > div {
             img {
@@ -80,15 +66,6 @@ aside {
         .ag-timeline_item {
           .ag-timeline-card_item {
             gap: 1rem;
-            h2{
-              font-size: 16px;
-            }
-            h3{
-              font-size: 15px;
-            }
-            p{
-              font-size: 14px;
-            }
             > div {
               img {
                 max-width: 60px;

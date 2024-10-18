@@ -1,13 +1,12 @@
 @import "../../../CSS/nav.css";
 @import "../../../CSS/TimelineLineProgress.css";
 @import "../../../CSS/footer.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../../../CSS/Fonts/fontSizes.css";
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   background: linear-gradient(180deg, #fff 0%, #ffe9ee 100%);
 }
 
@@ -58,18 +57,6 @@ body {
   text-align: center;
   gap: 1rem;
 }
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h1,
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
-  all: unset;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h1 {
-  font-size: 36px;
-  font-weight: 700;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
-  font-size: 27px;
-  font-weight: 500;
-}
 .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(3) {
   display: flex;
   flex-flow: row wrap;
@@ -88,26 +75,6 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2,
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3,
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) p {
-  all: unset;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2,
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3,
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) span {
-  font-weight: 600;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2 {
-  font-size: 18px;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3 {
-  font-size: 17px;
-}
-.contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) p {
-  font-size: 15px;
 }
 .contentEmpresas .contentEmpresasEdit {
   transform: translateY(0%) scale(1);
@@ -135,12 +102,6 @@ footer {
   .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) {
     gap: 0.8rem;
   }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h1 {
-    font-size: 26px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(1) h2 {
-    font-size: 20px;
-  }
   .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(3) {
     gap: 2.5rem;
   }
@@ -149,14 +110,5 @@ footer {
   }
   .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) {
     gap: 1rem;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h2 {
-    font-size: 16px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) h3 {
-    font-size: 15px;
-  }
-  .contentEmpresas > :nth-child(2) > :nth-child(1) > :nth-child(4) p {
-    font-size: 13px;
   }
 }/*# sourceMappingURL=styles.css.map */

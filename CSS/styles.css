@@ -1,17 +1,8 @@
 @import 'nav.css';
 @import 'footer.css';
 @import 'envio_participa_beneficio.css';
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import 'Fonts/fontSizes.css';
+
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-body h2, body h3 {
-  font-weight: 600;
-}
-body p {
-  font-weight: 500;
-}/*# sourceMappingURL=styles.css.map */

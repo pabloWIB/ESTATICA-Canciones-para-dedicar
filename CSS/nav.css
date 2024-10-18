@@ -74,8 +74,6 @@ nav > :nth-child(1) > :nth-child(2) > :nth-child(1) .link .link-click::before {
 }
 nav > :nth-child(1) > :nth-child(2) > :nth-child(1) a {
   all: unset;
-  font-size: 18px;
-  letter-spacing: -1%;
   cursor: pointer;
   font-weight: 600;
 }
@@ -186,8 +184,6 @@ nav > :nth-child(1) > :nth-child(2) > :nth-child(2) svg {
 }
 .overflow > :nth-child(1) a {
   all: unset;
-  font-size: 17px;
-  font-weight: 600;
   color: black;
   cursor: pointer;
 }

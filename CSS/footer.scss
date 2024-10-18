@@ -28,46 +28,21 @@ footer {
     }
     > :nth-child(1) {
       flex-flow: column wrap;
-      h3,
-      p,
-      a {
-        all: unset;
-      }
-      h3 {
-        font-size: 22px;
-        font-weight: 500;
-      }
-      p {
-        font-size: 18px;
-        font-weight: 400;
-      }
       > :nth-child(3) {
         a {
           cursor: pointer;
-          font-size: 22px;
           color: rgb(255, 255, 255);
           padding: 7.5px 15px;
           background: #db5774;
           border-radius: 30px;
           box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
-          font-weight: 500;
         }
       }
     }
     > :nth-child(3) {
       flex-flow: column wrap;
-      h2,
-      label {
-        all: unset;
-      }
-      h2 {
-        font-size: 22px;
-        font-weight: 500;
-      }
       label {
         text-align: left;
-        font-size: 18px;
-        font-weight: 400;
         margin-bottom: -2rem;
       }
       .inputs-container {
@@ -99,7 +74,6 @@ footer {
           color: white;
           border-radius: 0px 4px 4px 0px;
           cursor: pointer;
-          font-size: 18px;
           flex: 1;
         }
         input::placeholder {
@@ -115,13 +89,11 @@ footer {
         button {
           all: unset;
           cursor: pointer;
-          font-size: 22px;
           color: rgb(255, 255, 255);
           padding: 7.5px 55px;
           background: #db5774;
           border-radius: 30px;
           box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
-          font-weight: 500;
         }
       }
     }
@@ -140,12 +112,6 @@ footer {
         display: flex;
         flex-flow: column wrap;
         gap: 1rem;
-        p,
-        a {
-          all: unset;
-          font-weight: 400;
-          font-size: 17px;
-        }
         a {
           text-decoration: underline;
           cursor: pointer;
@@ -190,35 +156,15 @@ footer {
         width: 90%;
       }
       > :nth-child(1) {
-        h3,
-        p,
-        a {
-          all: unset;
-        }
-        h3 {
-          font-size: 17px;
-        }
-        p {
-          font-size: 15px;
-        }
         > :nth-child(3) {
           a {
-            font-size: 17px;
             padding: 6px 12px;
           }
         }
       }
       > :nth-child(3) {
-        h2,
-        label {
-          all: unset;
-        }
-        h2 {
-          font-size: 17px;
-        }
         label {
           text-align: left;
-          font-size: 14px;
           margin-bottom: -1.6rem;
         }
         .inputs-container {
@@ -246,7 +192,6 @@ footer {
             color: white;
             border-radius: 0px 4px 4px 0px;
             cursor: pointer;
-            font-size: 18px;
             flex: 1;
           }
           input::placeholder {
@@ -265,7 +210,6 @@ footer {
             }
           }
           button {
-            font-size: 17px;
             padding: 6px 20px;
           }
         }
@@ -282,10 +226,6 @@ footer {
         }
         > :nth-child(2) {
           gap: 0.8rem;
-          p,
-          a {
-            font-size: 13px;
-          }
         }
         > :nth-child(3) {
           margin: 0 auto;

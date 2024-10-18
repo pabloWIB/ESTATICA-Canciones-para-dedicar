@@ -1,13 +1,12 @@
 @import "../../../CSS/nav.css";
 @import "../../../CSS/envio_participa_beneficio.css";
 @import "../../../CSS/footer.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../../../CSS/Fonts/fontSizes.css";
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   background: linear-gradient(180deg, #d06b81 30.07%, #fff 100%);
 }
 
@@ -48,16 +47,7 @@ body {
 }
 .firstSection > :nth-child(2) > :nth-child(1) h1,
 .firstSection > :nth-child(2) > :nth-child(1) h2 {
-  all: unset;
   color: white;
-}
-.firstSection > :nth-child(2) > :nth-child(1) h1 {
-  font-size: 36px;
-  font-weight: 700;
-}
-.firstSection > :nth-child(2) > :nth-child(1) h2 {
-  font-size: 27px;
-  font-weight: 500;
 }
 .firstSection > :nth-child(2) > :nth-child(1) > div img {
   width: 100%;
@@ -94,11 +84,6 @@ body {
   margin: 0 auto;
   width: 90%;
 }
-.firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) h2 {
-  all: unset;
-  font-size: 18px;
-  font-weight: 600;
-}
 .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) {
   border-radius: 25px;
   background: #d06b81;
@@ -117,10 +102,7 @@ body {
   justify-content: center;
 }
 .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
-  all: unset;
   text-align: center;
-  font-size: 16px;
-  font-weight: 500;
   color: white;
 }
 .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
@@ -152,16 +134,7 @@ body {
   }
   .firstSection > :nth-child(2) > :nth-child(1) h1,
   .firstSection > :nth-child(2) > :nth-child(1) h2 {
-    all: unset;
     color: white;
-  }
-  .firstSection > :nth-child(2) > :nth-child(1) h1 {
-    font-size: 26px;
-    font-weight: 700;
-  }
-  .firstSection > :nth-child(2) > :nth-child(1) h2 {
-    font-size: 20px;
-    font-weight: 500;
   }
   .firstSection > :nth-child(2) > :nth-child(1) > div img {
     width: 100%;
@@ -174,11 +147,6 @@ body {
     padding-top: 1.2rem;
     padding-bottom: 5.6%;
   }
-  .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(1) > :nth-child(1) h2 {
-    all: unset;
-    font-size: 16px;
-    font-weight: 600;
-  }
   .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) {
     padding: 1.2rem 0rem;
     margin-top: -1.35rem;
@@ -187,10 +155,7 @@ body {
     gap: 0.8rem;
   }
   .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
-    all: unset;
     text-align: center;
-    font-size: 14px;
-    font-weight: 500;
     color: white;
   }
   .firstSection > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
@@ -273,22 +238,7 @@ body {
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2,
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3,
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-  all: unset;
   position: relative;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-  font-weight: 600;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2 {
-  font-size: 18px;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-  font-size: 17px;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-  font-size: 16px;
-  font-weight: 500;
 }
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
   width: 100%;
@@ -326,22 +276,6 @@ body {
   gap: 0.5rem;
   padding: 1rem 0rem;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(1) h3,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(1) p,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(1) h3,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(1) p {
-  all: unset;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(1) h3,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(1) h3 {
-  font-weight: 600;
-  font-size: 17px;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(1) p,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(1) p {
-  font-size: 15px;
-  font-weight: 500;
-}
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(2),
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(2) {
   background: #d06b81;
@@ -374,18 +308,6 @@ body {
   align-items: flex-start;
   gap: 0.5rem;
   padding: 1rem 0rem;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(1) h3,
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(1) p {
-  all: unset;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(1) h3 {
-  font-weight: 600;
-  font-size: 17px;
-}
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(1) p {
-  font-size: 15px;
-  font-weight: 500;
 }
 .secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(2) {
   background: #d06b81;
@@ -422,15 +344,6 @@ body {
   }
   aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
     gap: 1rem;
-  }
-  aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2 {
-    font-size: 16px;
-  }
-  aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3 {
-    font-size: 15px;
-  }
-  aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
-    font-size: 14px;
   }
   aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
     max-width: 60px;
