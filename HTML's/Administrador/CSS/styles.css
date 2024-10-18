@@ -1,5 +1,3 @@
 @import '../../../CSS/Nav/nav.css';
 @import '../../../CSS/Footer/footer.css';
 @import '../../../CSS/Fonts/fontSizes.css';
-
-/* No es necesario definir los tamaños de los textos, todo esta definido en la carpeta de arriba @import '../../../CSS/Fonts/fontSizes.css'; si algo me pregunta */
