@@ -1,8 +1,4 @@
 @import 'Nav/nav.css';
 @import 'Footer/footer.css';
 @import 'EnParBen/envio_participa_beneficio.css';
-@import 'Fonts/fontSizes.css';
-
-:root {
-  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-}
+@import 'Fonts/fontSizes.css';/*# sourceMappingURL=styles.css.map */

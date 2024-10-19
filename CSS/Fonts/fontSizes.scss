@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -48,15 +49,19 @@ option {
   h1 {
     font-size: 26px;
   }
+
   h2 {
     font-size: 19px;
   }
+
   h4 {
     font-size: 17px;
   }
+
   h3 {
     font-size: 15px;
   }
+
   a,
   p,
   span,
@@ -65,19 +70,24 @@ option {
     font-size: 16px;
   }
 }
+
 @media (max-width: 575px) {
   h1 {
     font-size: 20px;
   }
+
   h2 {
     font-size: 16px;
   }
+
   h3 {
     font-size: 15px;
   }
+
   h4 {
     font-size: 14.5px;
   }
+
   a,
   p,
   span,
@@ -86,16 +96,16 @@ option {
     font-size: 14px;
   }
 }
-body div::-moz-selection, body section::-moz-selection {
-  background: transparent;
+
+body {
+  div::selection,
+  section::selection {
+    background: transparent;
+  }
+
+  img {
+    &::selection {
+      background: transparent;
+    }
+  }
 }
-body div::selection,
-body section::selection {
-  background: transparent;
-}
-body img::-moz-selection {
-  background: transparent;
-}
-body img::selection {
-  background: transparent;
-}/*# sourceMappingURL=fontSizes.css.map */

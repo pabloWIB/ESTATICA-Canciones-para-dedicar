@@ -1,23 +1,15 @@
-@import "../../../CSS/nav.css";
-@import "../../../CSS/footer.css";
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
 
-$DarkBlue: hsl(233, 26%, 24%);
-$DarkBlue2: hsl(233, 26%, 24%, 0.9);
-$DarkBlue3: hsl(233, 26%, 24%, 0.2);
-
-:root {
-  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-}
-
 body {
-  a{
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-  }
   background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #d56f86 100%);
   > :nth-child(3) {
+    a{
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+    }
     position: relative;
     width: 100%;
     margin-top: 2rem;

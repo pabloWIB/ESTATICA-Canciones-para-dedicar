@@ -6,6 +6,13 @@ footer {
   flex-flow: row wrap;
   align-items: center;
   place-content: center;
+  a{
+    all: unset;
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
   > :nth-child(1) {
     margin: 0 auto;
     width: 90%;
@@ -30,6 +37,7 @@ footer {
       flex-flow: column wrap;
       > :nth-child(3) {
         a {
+          all: unset;
           cursor: pointer;
           color: rgb(255, 255, 255);
           padding: 7.5px 15px;
@@ -134,10 +142,11 @@ footer {
         }
       }
     }
+    
   }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 900px) {
   footer {
     padding: 40px 0px;
     br{

@@ -1,15 +1,7 @@
-@import "../../../CSS/nav.css";
-@import "../../../CSS/envio_participa_beneficio.css";
-@import "../../../CSS/footer.css";
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/EnParBen/envio_participa_beneficio.css";
+@import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
-
-$DarkBlue: hsl(233, 26%, 24%);
-$DarkBlue2: hsl(233, 26%, 24%, 0.9);
-$DarkBlue3: hsl(233, 26%, 24%, 0.2);
-
-:root {
-  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-}
 
 body {
   background: linear-gradient(180deg, #d06b81 30.07%, #fff 100%);
@@ -125,7 +117,7 @@ body {
   }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 900px) {
   .firstSection {
     padding-top: 2rem;
     br {
@@ -205,7 +197,7 @@ body {
     width: 90%;
     max-width: 1440px;
     aside {
-      width: 70%;
+      width: 85%;
       .ag-timeline {
         display: flex;
         flex-flow: column wrap;
@@ -219,6 +211,8 @@ body {
           top: 0;
           left: 0;
           height: 90%;
+          padding-left: 4%;
+          transform: translateY(2.5%);
           .ag-timeline_line-progress {
             width: 100%;
             height: 20%;
@@ -230,14 +224,13 @@ body {
           }
         }
         .ag-timeline_list {
-          padding-left: 4%;
           display: flex;
           flex-flow: column wrap;
           gap: 3.5rem;
           .ag-timeline_item {
             display: flex;
             flex-flow: column wrap;
-            gap: 3rem;
+            gap: 1.75rem;
             margin: 0 auto;
             width: 100%;
             position: relative;
@@ -257,8 +250,11 @@ body {
                 }
               }
             }
+            > :nth-child(1),
+            > :nth-child(3) {
+              padding-left: 8%;
+            }
             > :nth-child(2) {
-              // margin-left: -7%;
               display: flex;
               flex-flow: column wrap;
               align-items: center;
@@ -308,6 +304,7 @@ body {
                 border-radius: 25px;
                 background-color: rgb(255, 255, 255);
                 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                width: 100%;
                 > :nth-child(1) {
                   margin: 0 auto;
                   width: 90%;
@@ -333,8 +330,8 @@ body {
                       width: 100%;
                       max-width: 40px;
                     }
-                    >:nth-child(2){
-                      img{
+                    > :nth-child(2) {
+                      img {
                         width: 100%;
                         max-width: 46px;
                       }
@@ -343,6 +340,9 @@ body {
                 }
               }
             }
+            .finish_item {
+              margin-top: -1.5rem;
+            }
           }
         }
       }
@@ -350,22 +350,91 @@ body {
   }
 }
 
-@media (max-width: 875px) {
-  aside {
-    .ag-timeline {
-      width: 95%;
-      .ag-timeline_line {
-        width: 7.5px;
-      }
-      .ag-timeline_list {
-        padding-left: 8%;
-        gap: 3.5rem;
-        .ag-timeline_item {
-          .ag-timeline-card_item {
-            gap: 1rem;
-            > div {
-              img {
-                max-width: 60px;
+@media (max-width: 900px) {
+  .secondSection {
+    padding: 1.5rem 0rem;
+    > :nth-child(2) {
+      gap: 1.25rem;
+      aside {
+        width: 90%;
+        .ag-timeline {
+          display: flex;
+          flex-flow: column wrap;
+          position: relative;
+          justify-content: flex-start;
+          margin: 0 auto;
+          width: 100%;
+          .ag-timeline_line {
+            width: 7.5px;
+            padding-left: 4%;
+            transform: translateY(1.5%);
+          }
+          .ag-timeline_list {
+            gap: 2.5rem;
+            .ag-timeline_item {
+              gap: 1.5rem;
+              .ag-timeline-card_item {
+                display: flex;
+                flex-flow: column wrap;
+                gap: 0.75rem;
+                > div {
+                  img {
+                    width: 100%;
+                    max-width: 55px;
+                  }
+                }
+              }
+              > :nth-child(1),
+              > :nth-child(3) {
+                padding-left: 8%;
+              }
+              > :nth-child(2) {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                gap: 1rem;
+                > :nth-child(1),
+                > :nth-child(2) {
+                  flex-flow: column wrap;
+                  gap: 1rem;
+                  > div {
+                    > :nth-child(1) {
+                      width: 95%;
+                      gap: 0.25rem;
+                      padding: 0.5rem 0rem;
+                    }
+                    > :nth-child(2) {
+                      padding: 0.5rem 0rem;
+                      img {
+                        max-width: 33px;
+                      }
+                    }
+                  }
+                }
+                > :nth-child(3) {
+                  > :nth-child(1) {
+                    width: 95%;
+                    gap: 0.25rem;
+                    padding: 0.5rem 0rem;
+                  }
+                  > :nth-child(2) {
+                    padding: 0.5rem 0rem;
+                    > :nth-child(1) {
+                      gap: 1rem;
+                      img {
+                        max-width: 33px;
+                      }
+                      > :nth-child(2) {
+                        img {
+                          max-width: 39px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .finish_item {
+                margin-top: -1.5rem;
               }
             }
           }

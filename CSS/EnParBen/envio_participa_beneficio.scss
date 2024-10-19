@@ -54,17 +54,13 @@
   animation-delay: .3s;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 900px) {
   .envio_participa_beneficio {
     padding: 1.2rem 0rem;
     > :nth-child(1) {
       gap: 2.4rem;
       > div {
         gap: 0.8rem;
-        h3,
-        p {
-          all: unset;
-        }
         p {
           br {
             display: none;

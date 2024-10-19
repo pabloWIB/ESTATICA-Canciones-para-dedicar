@@ -23,11 +23,12 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="../../IMG/FAVICON/apple-touch-icon.png" />
 	<link rel="manifest" href="../../IMG/FAVICON/site.webmanifest" />
 	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../../IMG/FAVICON/android-chrome-192x192.png">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="twitter:title" content="Dedica Canciones con Inteligencia Artificial" />
 	<meta name="twitter:description"
 		content="Escribir canciones personalizadas es nuestra pasión. Puedes dedicar una canción con nosotros al crear canciones con inteligencia artificial. Regalar canciones para dedicar nunca ha sido tan fácil ni rápido. Nuestra IA puede componer canciones por ti, hacer y escribir canciones." />
-	<meta name="twitter:image" content="../../IMG/FAVICON/favicon-32x32.png" />
+	<meta name="twitter:image" content="IMG/FAVICON/favicon-32x32.png" />
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -48,8 +49,9 @@
 	</script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<link rel="stylesheet" href="CSS/styles.css" />
-	<title>Canciones para dedicar | Producto</title>
+	<title>Canciones para dedicar | Para empresas</title>
 </head>
 
 <body id="body">
@@ -121,132 +123,103 @@
 	</div>
 	<!-- Menú overlay -->
 
-
-	<div class="secondSection">
-		<!-- Segunda sección -->
+	<div class="contentEmpresas" >
 		<div>
-			<img src="IMG/Vector 2.svg" alt="Vector lines background">
+			<img src="IMG/Group.svg" alt="">
 		</div>
+		<div id="contentEmpresas">
+			<div>
+				<div>
+					<h1>Preguntas frecuentes (FaQ’s):</h1>
+					<h2>Aquí te aclararemos las preguntas <br>
+						más frecuentes como empresa.</h2>
+				</div>
+				<aside>
+					<div class="js-timeline ag-timeline">
+						<div class="js-timeline_line ag-timeline_line">
+							<div class="js-timeline_line-progress ag-timeline_line-progress">
+							</div>
+						</div>
+						<div class="ag-timeline_list">
+							<div class="js-timeline_item ag-timeline_item">
 
-		<div>
-			<aside>
-				<div class="js-timeline ag-timeline">
-					<div class="js-timeline_line ag-timeline_line">
-						<div class="js-timeline_line-progress ag-timeline_line-progress">
+								<div class="js-timeline-card_point-box ag-timeline-card_item">
+									<h2>¿Qué necesitas?</h2>
+									<p>Con un móvil, una tablet o un ordenador con conexión a internet podrás componer
+										canciones personalizadas para tus clientes.</p>
+									<p>Sin necesidad de tener un dispositivo de gran potencia o de
+										reciente adquisición.</p>
+									<div>
+										<img src="IMG/iphone.png" alt="Iphone">
+									</div>
+								</div>
+							</div>
+
+							<div class="js-timeline_item ag-timeline_item">
+
+								<div class="js-timeline-card_point-box ag-timeline-card_item">
+									<h2>¿Cuándo recibirás la comisión por dedicar una canción?</h2>
+									<p>En el mismo momento de la venta.</p>
+									<div>
+										<img src="IMG/efectivo.png" alt="Efectivo">
+									</div>
+								</div>
+							</div>
+							<div class="js-timeline_item ag-timeline_item">
+
+								<div class="js-timeline-card_point-box ag-timeline-card_item">
+									<h2>¿Quién recibirá las canciones personalizadas?</h2>
+									<p>Tú decides, elige lo más conveniente para tus clientes:</p>
+									<h3>Lo podemos enviar nosotros vía email al cliente final</h3>
+									<h3>Lo podemos enviar a un email de confianza tuyo desde el que
+										puedas hacérselo llegar a tu cliente.</h3>
+									<div>
+										<img src="IMG/voz.png" alt="Voz">
+									</div>
+								</div>
+							</div>
+							<div class="js-timeline_item ag-timeline_item">
+
+								<div class="js-timeline-card_point-box ag-timeline-card_item">
+									<h2>¿Qué puedes ofrecer junto con cada una de las canciones
+										personalizadas?</h2>
+									<p>No solo podrás ayudar a dedicar canciones, también podrás ofrecer todos y cada
+										uno de nuestros detalles musicales.</p>
+									<h3>Buscando personalizar al máximo cada uno de los pedidos.</h3>
+								</div>
+							</div>
+							<div class="js-timeline_item">
+								<div class="js-timeline-card_point-box">
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="ag-timeline_list">
-						<div class="js-timeline_item ag-timeline_item">
-
-							<div class="js-timeline-card_point-box ag-timeline-card_item">
-								<h2>¿A quién va dirigido?</h2>
-								<p>A toda empresa que quiera fidelizar a un cliente con un recuerdo de por vida.
-									En especial a:</p>
-							</div>
-
-							<div class="js-timeline-card_point-box ag-timeline-card_item">
-
-								<div>
-
-									<div>
-										<div>
-											<h3>Tiendas de regalos y complementos.</h3>
-											<p>Ayuda a tus clientes a que sean románticos y
-												detallistas con los que más quieren.</p>
-										</div>
-										<div>
-											<img src="IMG/regalo.svg" alt="Regalo">
-										</div>
-									</div>
-
-									<div>
-										<div>
-											<h3>Centros comerciales.</h3>
-											<p>Con nuestros puestos de venta automáticos
-												podrás ofrecer una experiencia tremendamente
-												enriquecedora.</p>
-										</div>
-										<div>
-											<img src="IMG/mall.svg" alt="Mamall.svg">
-										</div>
-									</div>
-
-								</div>
-
-								<div>
-
-									<div>
-										<div>
-											<h3>Floristerías.</h3>
-											<p>Basta de tarjetas de felicitación, diferénciate
-												de la competencia ofreciendo canciones
-												personalizadas realizadas en menos de 2
-												minutos.</p>
-										</div>
-										<div>
-											<img src="IMG/floristeria.svg" alt="floristeria.svg">
-										</div>
-									</div>
-
-									<div>
-										<div>
-											<h3>Profesores y escuelas de música.</h3>
-											<p>Ayuda a tus alumnos a tocar nuevas y únicas
-												melodías. <br><br>
-												Ensaya con nuestras partituras y tablaturas
-												acorde al gusto de cada alumno.</p>
-										</div>
-										<div>
-											<img src="IMG/profesor.svg" alt="Prprofesor.svg">
-										</div>
-									</div>
-
-								</div>
-
-								<div>
-									<div>
-										<h3>Páginas webs en general.</h3>
-										<p>Solicítanos acceso a nuestro plugin para poder incorporarlo a tu página web y
-											generar rendimientos de
-											manera pasiva.</p>
-									</div>
-									<div>
-										<div>
-											<div>
-												<img src="IMG/web.svg" alt="Weweb.svg">
-											</div>
-											<div>
-												<img src="IMG/web.svg" alt="Weweb.svg">
-											</div>
-											<div>
-												<img src="IMG/web.svg" alt="Weweb.svg">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div >
-								
-								<h2 >¿Qué beneficios tiene?</h2>
-								<p>Muchos, algunos de ellos son:</p>
-								<div class="js-timeline_item ">
-									<div class="js-timeline-card_point-box finish_item"></div>
-								</div>
-							</div>
-
-							
-
-						</div>
-
+				</aside>
+				<div>
+					<div>
+						<img src="IMG/caridad.png" alt="Símbolo  de caridad">
+					</div>
+					<div>
+						<img src="IMG/diamante.png" alt="Símbolo  de calidad">
+					</div>
+					<div>
+						<img src="IMG/caridadDerecha.png" alt="Símbolo  de caridad">
 					</div>
 				</div>
-			</aside>
+				<div>
+					<h2>Hablemos de pagos:</h2>
+					<h3>¿Cómo sabrá tu cliente si ha ganado el sorteo y le podemos regalar una canción?</h3>
+					<p>Una vez concluida la venta y hayamos recibido el pago, se os derivará a una página comunicándolo.
+						<br>
+						En menos de 10 días naturales se recibirá el reembolso en vuestra cuenta.
+					</p>
+					<p><span>¿Quién puede realizar el pago de cada canción personalizada?</span></p>
+					<p>Tanto el cliente final como vosotros como intermediarios. Rellenando <br>
+						los correspondientes datos de facturación.</p>
+				</div>
+			</div>
 		</div>
-
-		<!-- Segunda sección -->
 	</div>
-
 	<!-- Footer -->
 	<footer>
 		<div>
@@ -301,7 +274,6 @@
 		</div>
 	</footer>
 	<!-- Footer -->
-
 	<script src="../../JS/nav.js"></script>
 	<script src="../../JS/footer.js"></script>
 	<script src="../../JS/TimelineLineProgress.js"></script>

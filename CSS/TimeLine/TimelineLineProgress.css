@@ -49,7 +49,7 @@ aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > 
   max-width: 75px;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 900px) {
   aside .ag-timeline {
     width: 95%;
   }

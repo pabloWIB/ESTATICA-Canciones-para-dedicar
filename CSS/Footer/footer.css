@@ -7,6 +7,13 @@ footer {
   align-items: center;
   place-content: center;
 }
+footer a {
+  all: unset;
+  color: white;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
 footer > :nth-child(1) {
   margin: 0 auto;
   width: 90%;
@@ -32,6 +39,7 @@ footer > :nth-child(1) > :nth-child(1) {
   flex-flow: column wrap;
 }
 footer > :nth-child(1) > :nth-child(1) > :nth-child(3) a {
+  all: unset;
   cursor: pointer;
   color: rgb(255, 255, 255);
   padding: 7.5px 15px;
@@ -136,7 +144,7 @@ footer > :nth-child(1) > :nth-child(5) > :nth-child(3) > a img:hover {
   scale: 1.05;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 900px) {
   footer {
     padding: 40px 0px;
   }

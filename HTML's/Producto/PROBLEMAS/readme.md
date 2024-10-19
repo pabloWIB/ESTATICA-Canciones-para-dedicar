@@ -1,1 +1,0 @@
-La página en general tiene lag, se tiene que volver a crear
