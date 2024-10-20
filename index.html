@@ -48,7 +48,8 @@
 	<title>Administrador | Log In</title>
 </head>
 <body>
-	<header></header>
+	<aside>
+	</aside>
 	<nav>
 		<div>
 			<h1>Admin</h1>
@@ -59,13 +60,13 @@
 				<label for="email">
 					<span>Email</span>
 					<div>
-						<input id="email" type="email" placeholder="username@gmail.com" required aria-required="true" />
+						<input id="email" type="email" placeholder="canciones@gmail.com" required aria-required="true" />
 					</div>
 				</label>
 				<label for="password">
 					<span>Contraseña</span>
 					<div>
-						<input id="password" type="password" placeholder="Password" required aria-required="true" />
+						<input id="password" type="password" placeholder="Contraseña" required aria-required="true" />
 						<div class="hiddenIcons" id="hiddenIcons" onclick="togglePasswordVisibility()" aria-label="Toggle password visibility" role="button" tabindex="0">
 							<div>
 								<img id="toggleIcon" src="IMG/visibility_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Show password" />
@@ -75,14 +76,12 @@
 				</label>
 			</div>
 			<div>
-				<a href="#">Forgot Password?</a>
+				<a href="#" id="forgotPassword">¿Olvidaste tu Contraseña?</a>
 			</div>
-			<button type="submit">Sign in</button>
+			<button type="submit">Ingresar</button>
 		</form>
 	</nav>
-	
 
-	
 	<script src="Comercial/JS/zoom.js"></script>
 	<script src="JS/script.js"></script>
 </body>

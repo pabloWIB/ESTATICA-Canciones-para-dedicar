@@ -10,7 +10,20 @@ function togglePasswordVisibility() {
     toggleIcon.alt = showPassword ? 'Hide password' : 'Show password';
 }
 
-document.getElementById('loginForm').addEventListener('submit', function (event) {
+document.getElementById('forgotPassword').addEventListener('click', function(event) {
     event.preventDefault();
-    // Handle login submission
+    alert('Por favor, comunícate al área de desarrollo.');
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (email && password) {
+        window.location.href = '../admin.html'; 
+    } else {
+        alert('Por favor, completa ambos campos.');
+    }
 });

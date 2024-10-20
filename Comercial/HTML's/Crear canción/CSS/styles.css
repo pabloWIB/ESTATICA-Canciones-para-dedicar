@@ -1,6 +1,77 @@
 @import "../../../CSS/Nav/nav.css";
 @import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
+body .cotenido {
+  background: linear-gradient(180deg, #fff 0%, #d06b81 73.5%, #bf5e73 100%);
+  position: relative;
+  overflow: hidden;
+}
+body .cotenido > :nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  z-index: 0;
+  background-image: url("../IMG/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .cotenido > :nth-child(1) img {
+  width: 100%;
+}
+body .cotenido > :nth-child(2) {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 1440px;
+}
+body .cotenido > :nth-child(2) > :nth-child(1) {
+  text-align: center;
+  color: #bf5e73;
+  position: relative;
+  padding: 0.5rem 0rem;
+  margin: 4.5rem 0rem;
+  transform: translateY(-10%) scale(0.9);
+  opacity: 0%;
+  transition: 1s;
+}
+body .cotenido > :nth-child(2) > :nth-child(1) > :nth-child(3) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body .cotenido > :nth-child(2) .creaTuCancionAnim {
+  transform: translateY(0%) scale(1);
+  opacity: 1;
+}
+body .cotenido > :nth-child(2) > :nth-child(2) {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+body .cotenido > :nth-child(2) > :nth-child(2) > :nth-child(1) {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 1.25% 0%;
+}
+
+footer {
+  background: transparent;
+}
 footer > :nth-child(1) > :nth-child(1),
 footer > :nth-child(1) > :nth-child(2),
 footer > :nth-child(1) > :nth-child(3),

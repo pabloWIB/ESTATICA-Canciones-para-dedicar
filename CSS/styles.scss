@@ -1,6 +1,10 @@
 
 @import '../Comercial/CSS/Fonts/fontSizes.css';
 
+h1::selection, h2::selection, h3::selection, p::selection, span::selection, br::selection, img::selection, a::selection, button::selection{
+  background: none;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -8,27 +12,31 @@ body {
     place-content: center;
     justify-content: center;
     align-items: center;
-    header {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: flex;
-      align-items: center;
-      place-content: center;
-      z-index: 0;
-      background: black;
-    }
+    background: radial-gradient(50% 50% at 50% 50%, #F3C2CD 0%, #DA748A 100%);
+    overflow: hidden;
+    aside {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        place-content: center;
+        z-index: 0;
+        background-image: url("../IMG/Group 2252.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     nav {
-      background: red;
       display: flex;
       flex-flow: column wrap;
-      background: rgba($color: #c15858, $alpha: 0.28);
+      background: rgba(208, 107, 129, 0.28);
       border-radius: 28.46px;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      border: 2.13px solid rgba(193, 88, 88, 0.49);
+      border: 2.13px solid rgba(208, 107, 129, 0.49);
       padding: 40px 80px;
       h1,
       h2,
@@ -38,6 +46,9 @@ body {
       span,
       label {
         color: white;
+      }
+      h1{
+        text-align: center;
       }
       > :nth-child(1) {
         display: flex;
@@ -85,6 +96,7 @@ body {
               input {
                 all: unset;
                 color: black;
+                transition: .3s;
               }
               input::placeholder {
                 color: #555555;
@@ -94,6 +106,7 @@ body {
                 flex-flow: row wrap;
                 align-items: center;
                 position: relative;
+                transform: translateY(3px);
                 > div {
                   img {
                     width: 100%;
@@ -117,7 +130,7 @@ body {
         > :nth-child(3) {
           all: unset;
           border-radius: 7.11px;
-          background-color: #650000;
+          background-color: #B2072D;
           padding: 10px 0px;
           font-size: 16px;
           font-weight: 600;
@@ -127,7 +140,7 @@ body {
           transition: 0.3s;
           color: white;
           &:hover {
-            background: rgba($color: #ac0000, $alpha: 1);
+            background: rgba($color: #db0534, $alpha: 1);
             transition: 0.3s;
           }
         }

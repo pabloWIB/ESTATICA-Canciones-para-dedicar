@@ -1,9 +1,10 @@
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-  $DarkBlue: hsl(233, 26%, 24%);
-  $DarkBlue2: hsl(233, 26%, 24%, 0.9);
-  $DarkBlue3: hsl(233, 26%, 24%, 0.2);
 }
+
+$DarkBlue: hsl(233, 26%, 24%);
+$DarkBlue2: hsl(233, 26%, 24%, 0.9);
+$DarkBlue3: hsl(233, 26%, 24%, 0.2);
 
 // Menú de navegación
 
@@ -69,7 +70,7 @@ nav {
             bottom: 0em;
             left: 0;
             width: 100%;
-            height: 1px;
+            height: 2px;
             transform-origin: right;
             transition: transform var(--animation-primary);
             transform: scaleX(0);
@@ -80,13 +81,18 @@ nav {
           }
           .link-click::after,
           .link-click::before {
-            background-color: rgb(0, 0, 0);
+            background-color: #d06b81;
           }
         }
         a {
           all: unset;
           font-weight: 600;
           cursor: pointer;
+          transition: .3s;
+          &:hover{
+            color: #d06b81;
+            transition: .3s;
+          }
         }
         > :nth-child(5) {
           color: rgb(255, 255, 255);
@@ -98,6 +104,7 @@ nav {
           &:hover {
             transform: scale(1.07);
             transition: 0.3s;
+            color: rgb(255, 255, 255);
           }
         }
       }
@@ -213,13 +220,18 @@ nav {
     }
     .link-click::after,
     .link-click::before {
-      background-color: rgb(0, 0, 0);
+      background-color: #d06b81;
     }
   }
   a {
     all: unset;
     font-weight: 600;
     cursor: pointer;
+    transition: .3s;
+    &:hover{
+      color: #d06b81;
+      transition: .3s;
+    }
   }
   > :nth-child(1) {
     background: white;
