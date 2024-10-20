@@ -1,0 +1,281 @@
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/EnParBen/envio_participa_beneficio.css";
+@import "../../../CSS/Footer/footer.css";
+@import "../../../CSS/Fonts/fontSizes.css";
+
+body {
+  background: linear-gradient(180deg, #d06b81 30.07%, #fff 100%);
+}
+
+.secondSection {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2.5rem 0rem;
+  > :nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 100%;
+    }
+  }
+  > :nth-child(2) {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    aside {
+      width: 85%;
+      .ag-timeline {
+        display: flex;
+        flex-flow: column wrap;
+        position: relative;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 95%;
+        .ag-timeline_line {
+          width: 10px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 90%;
+          padding-left: 4%;
+          transform: translateY(2.5%);
+          .ag-timeline_line-progress {
+            width: 100%;
+            height: 20%;
+            background-color: #d06b81;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+        }
+        .ag-timeline_list {
+          display: flex;
+          flex-flow: column wrap;
+          gap: 3.5rem;
+          .ag-timeline_item {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 1.75rem;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            .ag-timeline-card_item {
+              display: flex;
+              flex-flow: column wrap;
+              gap: 1rem;
+              h2,
+              h3,
+              p {
+                position: relative;
+              }
+              > div {
+                img {
+                  width: 100%;
+                  max-width: 75px;
+                }
+              }
+            }
+            > :nth-child(1),
+            > :nth-child(3) {
+              padding-left: 8%;
+            }
+            > :nth-child(2) {
+              display: flex;
+              flex-flow: column wrap;
+              align-items: center;
+              gap: 1.5rem;
+              > :nth-child(1),
+              > :nth-child(2) {
+                display: flex;
+                flex-flow: row wrap;
+                gap: 1.5rem;
+                > div {
+                  flex: 1;
+                  display: flex;
+                  flex-flow: column wrap;
+                  justify-content: space-between;
+                  border-radius: 25px;
+                  background-color: rgb(255, 255, 255);
+                  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                  > :nth-child(1) {
+                    margin: 0 auto;
+                    width: 90%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: flex-start;
+                    gap: 0.5rem;
+                    padding: 1rem 0rem;
+                  }
+                  > :nth-child(2) {
+                    background: #d06b81;
+                    border-radius: 0px 0px 25px 25px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem 0rem;
+                    img {
+                      width: 100%;
+                      max-width: 40px;
+                    }
+                  }
+                }
+              }
+              > :nth-child(3) {
+                flex: 1;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                border-radius: 25px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                width: 100%;
+                > :nth-child(1) {
+                  margin: 0 auto;
+                  width: 90%;
+                  display: flex;
+                  flex-flow: column wrap;
+                  align-items: flex-start;
+                  gap: 0.5rem;
+                  padding: 1rem 0rem;
+                }
+                > :nth-child(2) {
+                  background: #d06b81;
+                  border-radius: 0px 0px 25px 25px;
+
+                  justify-content: center;
+                  padding: 1rem 0rem;
+                  > :nth-child(1) {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    img {
+                      width: 100%;
+                      max-width: 40px;
+                    }
+                    > :nth-child(2) {
+                      img {
+                        width: 100%;
+                        max-width: 46px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .finish_item {
+              margin-top: -1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .secondSection {
+    padding: 1.5rem 0rem;
+    > :nth-child(2) {
+      gap: 1.25rem;
+      aside {
+        width: 90%;
+        .ag-timeline {
+          display: flex;
+          flex-flow: column wrap;
+          position: relative;
+          justify-content: flex-start;
+          margin: 0 auto;
+          width: 100%;
+          .ag-timeline_line {
+            width: 7.5px;
+            padding-left: 4%;
+            transform: translateY(1.5%);
+          }
+          .ag-timeline_list {
+            gap: 2.5rem;
+            .ag-timeline_item {
+              gap: 1.5rem;
+              .ag-timeline-card_item {
+                display: flex;
+                flex-flow: column wrap;
+                gap: 0.75rem;
+                > div {
+                  img {
+                    width: 100%;
+                    max-width: 55px;
+                  }
+                }
+              }
+              > :nth-child(1),
+              > :nth-child(3) {
+                padding-left: 8%;
+              }
+              > :nth-child(2) {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                gap: 1rem;
+                > :nth-child(1),
+                > :nth-child(2) {
+                  flex-flow: column wrap;
+                  gap: 1rem;
+                  > div {
+                    > :nth-child(1) {
+                      width: 95%;
+                      gap: 0.25rem;
+                      padding: 0.5rem 0rem;
+                    }
+                    > :nth-child(2) {
+                      padding: 0.5rem 0rem;
+                      img {
+                        max-width: 33px;
+                      }
+                    }
+                  }
+                }
+                > :nth-child(3) {
+                  > :nth-child(1) {
+                    width: 95%;
+                    gap: 0.25rem;
+                    padding: 0.5rem 0rem;
+                  }
+                  > :nth-child(2) {
+                    padding: 0.5rem 0rem;
+                    > :nth-child(1) {
+                      gap: 1rem;
+                      img {
+                        max-width: 33px;
+                      }
+                      > :nth-child(2) {
+                        img {
+                          max-width: 39px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .finish_item {
+                margin-top: -1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

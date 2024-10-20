@@ -1,0 +1,9 @@
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/Footer/footer.css";
+@import "../../../CSS/Fonts/fontSizes.css";
+footer > :nth-child(1) > :nth-child(1),
+footer > :nth-child(1) > :nth-child(2),
+footer > :nth-child(1) > :nth-child(3),
+footer > :nth-child(1) > :nth-child(4) {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
