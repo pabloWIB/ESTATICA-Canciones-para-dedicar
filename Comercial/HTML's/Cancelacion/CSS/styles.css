@@ -1,3 +1,64 @@
-@import '../../../CSS/Nav/nav.css';
-@import '../../../CSS/Footer/footer.css';
-@import '../../../CSS/Fonts/fontSizes.css';/*# sourceMappingURL=styles.css.map */
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/Footer/footer.css";
+@import "../../../CSS/Fonts/fontSizes.css";
+body .cotenido {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FFF 0%, #FFE3E9 37.5%, rgba(208, 107, 129, 0.56) 77%);
+}
+body .cotenido > :nth-child(1) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-image: url("../IMG/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .cotenido > :nth-child(1) img {
+  width: 100%;
+}
+body .cotenido > :nth-child(2) {
+  width: 90%;
+  transition: 0.4s;
+  transform: translateY(-5%);
+  opacity: 0;
+  background: white;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  border-radius: 25px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+body .cotenido > :nth-child(2) > :nth-child(1) {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0.25% 0%;
+}
+body .cotenido .textLoadingAnimation {
+  transition: 0.4s;
+  transform: translateY(0%);
+  opacity: 1;
+}
+body .cotenido footer {
+  background: transparent;
+  position: relative;
+  z-index: 20;
+}
+body footer {
+  background: transparent;
+  position: relative;
+  z-index: 20;
+}
+body footer > :nth-child(1) > :nth-child(1),
+body footer > :nth-child(1) > :nth-child(2),
+body footer > :nth-child(1) > :nth-child(3),
+body footer > :nth-child(1) > :nth-child(4) {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

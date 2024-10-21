@@ -1,12 +1,11 @@
 @import "../../../CSS/Nav/nav.css";
 @import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
-body .cotenido {
-  background: linear-gradient(180deg, #fff 0%, #d06b81 73.5%, #bf5e73 100%);
+body .cotenido, body .cotenido2, body .cotenido3 {
   position: relative;
   overflow: hidden;
 }
-body .cotenido > :nth-child(1) {
+body .cotenido > :nth-child(1), body .cotenido2 > :nth-child(1), body .cotenido3 > :nth-child(1) {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -16,19 +15,42 @@ body .cotenido > :nth-child(1) {
   align-items: center;
   place-content: center;
   z-index: 0;
-  background-image: url("../IMG/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-body .cotenido > :nth-child(1) img {
+body .cotenido > :nth-child(1) img, body .cotenido2 > :nth-child(1) img, body .cotenido3 > :nth-child(1) img {
   width: 100%;
 }
-body .cotenido > :nth-child(2) {
+body .cotenido > :nth-child(2), body .cotenido2 > :nth-child(2), body .cotenido3 > :nth-child(2) {
   position: relative;
   margin: auto;
   width: 90%;
   max-width: 1440px;
+}
+body .cotenido footer, body .cotenido2 footer, body .cotenido3 footer {
+  background: transparent;
+  position: relative;
+  z-index: 20;
+}
+body .cotenido footer > :nth-child(1) > :nth-child(1),
+body .cotenido footer > :nth-child(1) > :nth-child(2),
+body .cotenido footer > :nth-child(1) > :nth-child(3),
+body .cotenido footer > :nth-child(1) > :nth-child(4), body .cotenido2 footer > :nth-child(1) > :nth-child(1),
+body .cotenido2 footer > :nth-child(1) > :nth-child(2),
+body .cotenido2 footer > :nth-child(1) > :nth-child(3),
+body .cotenido2 footer > :nth-child(1) > :nth-child(4), body .cotenido3 footer > :nth-child(1) > :nth-child(1),
+body .cotenido3 footer > :nth-child(1) > :nth-child(2),
+body .cotenido3 footer > :nth-child(1) > :nth-child(3),
+body .cotenido3 footer > :nth-child(1) > :nth-child(4) {
+  display: none;
+}
+
+body .cotenido {
+  background: linear-gradient(180deg, #fff 0%, #d06b81 73.5%, #bf5e73 100%);
+}
+body .cotenido > :nth-child(1) {
+  background-image: url("../IMG/Vector.svg");
 }
 body .cotenido > :nth-child(2) > :nth-child(1) {
   text-align: center;
@@ -69,12 +91,15 @@ body .cotenido > :nth-child(2) > :nth-child(2) > :nth-child(1) {
   padding: 1.25% 0%;
 }
 
-footer {
-  background: transparent;
+body .cotenido2 {
+  background: linear-gradient(180deg, #FFF 0%, #FFE3E9 37.5%, #D06B81 77%);
 }
-footer > :nth-child(1) > :nth-child(1),
-footer > :nth-child(1) > :nth-child(2),
-footer > :nth-child(1) > :nth-child(3),
-footer > :nth-child(1) > :nth-child(4) {
-  display: none;
+body .cotenido2 > :nth-child(1) {
+  background-image: url("../IMG/Vector2.svg");
+}
+body .cotenido3 {
+  background: linear-gradient(180deg, #FFF 0%, #FFE3E9 37.5%, #d18695 77%);
+}
+body .cotenido3 > :nth-child(1) {
+  background-image: url("../IMG/Vector3.svg");
 }/*# sourceMappingURL=styles.css.map */

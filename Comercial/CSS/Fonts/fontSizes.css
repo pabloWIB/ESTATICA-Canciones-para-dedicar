@@ -32,7 +32,8 @@ a,
 p,
 span,
 label,
-input {
+input,
+button {
   font-size: 18px;
 }
 
@@ -61,7 +62,8 @@ option {
   p,
   span,
   label,
-  input {
+  input,
+  button {
     font-size: 16px;
   }
 }
@@ -82,7 +84,8 @@ option {
   p,
   span,
   label,
-  input {
+  input,
+  button {
     font-size: 14px;
   }
 }

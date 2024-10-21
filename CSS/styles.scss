@@ -1,116 +1,195 @@
+@import "../Comercial/CSS/Fonts/fontSizes.css";
 
-@import '../Comercial/CSS/Fonts/fontSizes.css';
-
-h1::selection, h2::selection, h3::selection, p::selection, span::selection, br::selection, img::selection, a::selection, button::selection{
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection,
+span::selection,
+br::selection,
+img::selection,
+a::selection,
+button::selection {
   background: none;
 }
 
 body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(50% 50% at 50% 50%, #f3c2cd 0%, #da748a 100%);
+  overflow: hidden;
+  aside {
     width: 100%;
-    height: 100vh;
-    display: grid;
-    place-content: center;
-    justify-content: center;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
     align-items: center;
-    background: radial-gradient(50% 50% at 50% 50%, #F3C2CD 0%, #DA748A 100%);
-    overflow: hidden;
-    aside {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: flex;
-        align-items: center;
-        place-content: center;
-        z-index: 0;
-        background-image: url("../IMG/Group 2252.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    nav {
+    place-content: center;
+    z-index: 0;
+    background-image: url("../IMG/Group 2252.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: waveAnimation 9s infinite;
+}
+  nav {
+    display: flex;
+    flex-flow: column wrap;
+    background: rgba(208, 107, 129, 0.28);
+    border-radius: 28.46px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2.13px solid rgba(208, 107, 129, 0.49);
+    padding: 40px 80px;
+    margin: 0 auto;
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    span,
+    label {
+      color: white;
+    }
+    h1 {
+      text-align: center;
+    }
+    > :nth-child(1) {
       display: flex;
       flex-flow: column wrap;
-      background: rgba(208, 107, 129, 0.28);
-      border-radius: 28.46px;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 2.13px solid rgba(208, 107, 129, 0.49);
-      padding: 40px 80px;
-      h1,
-      h2,
-      h3,
-      p,
-      a,
-      span,
-      label {
-        color: white;
+      gap: 40px;
+      h2 {
+        margin-bottom: 24px;
       }
-      h1{
-        text-align: center;
-      }
+    }
+    form {
+      display: flex;
+      flex-flow: column wrap;
       > :nth-child(1) {
         display: flex;
         flex-flow: column wrap;
-        gap: 40px;
-        h1,
-        h2 {
-          font-size: 24px;
-          font-weight: 600;
-        }
-        h2 {
-          margin-bottom: 24px;
-        }
-      }
-      form {
-        display: flex;
-        flex-flow: column wrap;
+        gap: 16px;
         > :nth-child(1) {
+          input {
+            padding: 4.5px 0px;
+          }
+        }
+        > label {
           display: flex;
           flex-flow: column wrap;
-          gap: 16px;
-          > :nth-child(1) {
-            input {
-              padding: 4.5px 0px;
-            }
+          gap: 8px;
+          span {
+            font-size: 13px;
+            cursor: default;
           }
-          > label {
+          > div {
             display: flex;
-            flex-flow: column wrap;
-            gap: 8px;
-            span {
-              font-size: 13px;
-              cursor: default;
+            flex-flow: row wrap;
+            align-items: center;
+            padding: 8px 16px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #bcbec0;
+            border-radius: 5px;
+            justify-content: space-between;
+            cursor: text;
+            input {
+              all: unset;
+              color: black;
+              transition: 0.3s;
             }
-            > div {
+            input::placeholder {
+              color: #555555;
+            }
+            .hiddenIcons {
               display: flex;
               flex-flow: row wrap;
               align-items: center;
-              padding: 8px 16px;
-              background-color: rgb(255, 255, 255);
-              border: 1px solid #bcbec0;
-              border-radius: 5px;
-              justify-content: space-between;
-              cursor: text;
-              input {
-                all: unset;
-                color: black;
-                transition: .3s;
+              position: relative;
+              transform: translateY(3px);
+              > div {
+                img {
+                  width: 100%;
+                  cursor: pointer;
+                }
               }
-              input::placeholder {
-                color: #555555;
-              }
+            }
+          }
+        }
+      }
+      > :nth-child(2) {
+        margin: 10px 0px 24px 0px;
+        a {
+          cursor: pointer;
+          font-size: 13px;
+        }
+      }
+      > :nth-child(3) {
+        all: unset;
+        border-radius: 7.11px;
+        background-color: #b2072d;
+        padding: 10px 0px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 24px;
+        transition: 0.3s;
+        color: white;
+        &:hover {
+          background: rgba($color: #db0534, $alpha: 1);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes waveAnimation {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@media(max-width: 900px){
+  body {
+    nav {
+      border: 2px solid rgba(208, 107, 129, 0.49);
+      padding: 20px 40px;
+      > :nth-child(1) {
+        gap: 30px;
+        h2 {
+          margin-bottom: 20px;
+        }
+      }
+      form {
+        > :nth-child(1) {
+          gap: 14px;
+          > :nth-child(1) {
+            input {
+              padding: 4px 0px;
+            }
+          }
+          > label {
+            gap: 7px;
+            > div {
+              padding: 4px 8px;
               .hiddenIcons {
-                display: flex;
-                flex-flow: row wrap;
-                align-items: center;
-                position: relative;
-                transform: translateY(3px);
                 > div {
                   img {
-                    width: 100%;
-                    cursor: pointer;
+                    max-width: 20px;
                   }
                 }
               }
@@ -118,32 +197,58 @@ body {
           }
         }
         > :nth-child(2) {
-          margin: 10px 0px 24px 0px;
-          .forgotPassword {
-            display: none;
-          }
-          a {
-            cursor: pointer;
-            font-size: 13px;
-          }
+          margin: 8px 0px 20px 0px;
         }
         > :nth-child(3) {
-          all: unset;
-          border-radius: 7.11px;
-          background-color: #B2072D;
-          padding: 10px 0px;
-          font-size: 16px;
-          font-weight: 600;
-          text-align: center;
-          cursor: pointer;
-          margin-bottom: 24px;
-          transition: 0.3s;
-          color: white;
-          &:hover {
-            background: rgba($color: #db0534, $alpha: 1);
-            transition: 0.3s;
-          }
+          padding: 8px 0px;
+          margin-bottom: 20px;
         }
       }
     }
   }
+}
+
+@media(max-width: 575px){
+  body {
+    nav {
+      padding: 20px 30px;
+      transform: translateY(-5%);
+      > :nth-child(1) {
+        gap: 30px;
+        h2 {
+          margin-bottom: 20px;
+        }
+      }
+      form {
+        > :nth-child(1) {
+          gap: 14px;
+          > :nth-child(1) {
+            input {
+              padding: 4px 0px;
+            }
+          }
+          > label {
+            gap: 7px;
+            > div {
+              padding: 4px 8px;
+              .hiddenIcons {
+                > div {
+                  img {
+                    max-width: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        > :nth-child(2) {
+          margin: 8px 0px 20px 0px;
+        }
+        > :nth-child(3) {
+          padding: 8px 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

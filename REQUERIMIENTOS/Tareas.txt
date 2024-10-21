@@ -1,0 +1,2 @@
+Descargar todas las imagenes del Figma en carpetas correspondientes
+Definir tamaños estandares de img

@@ -1,62 +1,53 @@
 @import "../../../CSS/Nav/nav.css";
 @import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
-body {
-  background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #d56f86 100%);
-}
-body > :nth-child(3) {
+body .cotenido {
   position: relative;
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  z-index: 1;
   overflow: hidden;
+  background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #C36176 100%);
 }
-body > :nth-child(3) a {
-  color: blue;
-  cursor: pointer;
-  text-decoration: underline;
-}
-body > :nth-child(3) > :nth-child(1) {
+body .cotenido > :nth-child(1) {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  left: 0;
   top: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1;
+  z-index: 0;
+  background-image: url("../IMG/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-body > :nth-child(3) > :nth-child(1) img {
+body .cotenido > :nth-child(1) img {
   width: 100%;
-  transform: translateX(2%);
-  opacity: 80%;
 }
-body > :nth-child(3) > :nth-child(2) {
-  position: relative;
+body .cotenido > :nth-child(2) {
+  width: 90%;
+  transition: 0.4s;
+  transform: translateY(-5%);
+  opacity: 0;
+  background: white;
+  margin: 0 auto;
   width: 90%;
   max-width: 1440px;
+  border-radius: 25px;
   display: flex;
-  flex-flow: column wrap;
+  place-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+body .cotenido > :nth-child(2) > :nth-child(1) {
+  width: 97.5%;
   margin: 0 auto;
-  background: white;
-  border-radius: 20px;
-  z-index: 10;
-  transform: scale(0.99);
+  padding: 0.25% 0%;
 }
-body > :nth-child(3) > :nth-child(2) > :nth-child(1) {
-  width: 95%;
-  margin: 0 auto;
-  padding: 1.25% 0%;
-  display: flex;
-  flex-flow: column wrap;
+body .cotenido .textLoadingAnimation {
+  transition: 0.4s;
+  transform: translateY(0%);
+  opacity: 1;
 }
-body > :nth-child(3) .textLoadingAnimation {
-  transform: translateY(0%) scale(1);
-  transition: 0.3s;
-}
-
-footer {
+body .cotenido footer {
   background: transparent;
-}
-footer a {
-  text-decoration-line: none;
-  color: white;
+  position: relative;
+  z-index: 20;
 }/*# sourceMappingURL=styles.css.map */

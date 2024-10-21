@@ -27,3 +27,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert('Por favor, completa ambos campos.');
     }
 });
+
+gsap.to(".wave", {
+    scale: 1.1,
+    opacity: 0.8,
+    duration: 1.5,
+    yoyo: true,
+    repeat: -1,
+    ease: "power1.inOut"
+});

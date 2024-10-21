@@ -1,3 +1,104 @@
-@import '../../../CSS/Nav/nav.css';
-@import '../../../CSS/Footer/footer.css';
+@import "../../../CSS/Nav/nav.css";
+@import "../../../CSS/Footer/footer.css";
 @import "../../../CSS/Fonts/fontSizes.css";
+
+body {
+  background: linear-gradient(180deg, #fff 0%, #ffe9ee 100%);
+}
+
+.secondSection {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2.5rem 0rem;
+  > :nth-child(1) {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-image: url("../IMG/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  > :nth-child(2) {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+    > :nth-child(1) {
+      margin: 3rem 0rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: 1s;
+    }
+    .firstSectionFaqsAnimation {
+      opacity: 1;
+      transform: translateY(0%);
+      transition: .5s;
+    }
+    aside {
+      width: 85%;
+      .ag-timeline {
+        display: flex;
+        flex-flow: column wrap;
+        position: relative;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 95%;
+        .ag-timeline_line {
+          width: 10px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 90%;
+          padding-left: 4%;
+          transform: translateY(2.5%);
+          .ag-timeline_line-progress {
+            width: 100%;
+            height: 20%;
+            background-color: #d06b81;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+        }
+        .ag-timeline_list {
+          display: flex;
+          flex-flow: column wrap;
+          gap: 3.5rem;
+          .ag-timeline_item {
+            display: flex;
+            flex-flow: column wrap;
+            gap: 1.75rem;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            .ag-timeline-card_item {
+              display: flex;
+              flex-flow: column wrap;
+              gap: 3rem;
+            }
+            > div {
+              padding-left: 8%;
+            }
+            .finish_item {
+              margin-top: -1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

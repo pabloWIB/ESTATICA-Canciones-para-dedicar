@@ -1,8 +1,16 @@
-@import '../Comercial/CSS/Fonts/fontSizes.css';
+@import "../Comercial/CSS/Fonts/fontSizes.css";
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, p::-moz-selection, span::-moz-selection, br::-moz-selection, img::-moz-selection, a::-moz-selection, button::-moz-selection {
   background: none;
 }
-h1::selection, h2::selection, h3::selection, p::selection, span::selection, br::selection, img::selection, a::selection, button::selection {
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection,
+span::selection,
+br::selection,
+img::selection,
+a::selection,
+button::selection {
   background: none;
 }
 
@@ -13,7 +21,7 @@ body {
   place-content: center;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(50% 50% at 50% 50%, #F3C2CD 0%, #DA748A 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #f3c2cd 0%, #da748a 100%);
   overflow: hidden;
 }
 body aside {
@@ -30,6 +38,7 @@ body aside {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  animation: waveAnimation 9s infinite;
 }
 body nav {
   display: flex;
@@ -40,6 +49,7 @@ body nav {
   -webkit-backdrop-filter: blur(10px);
   border: 2.13px solid rgba(208, 107, 129, 0.49);
   padding: 40px 80px;
+  margin: 0 auto;
 }
 body nav h1,
 body nav h2,
@@ -57,11 +67,6 @@ body nav > :nth-child(1) {
   display: flex;
   flex-flow: column wrap;
   gap: 40px;
-}
-body nav > :nth-child(1) h1,
-body nav > :nth-child(1) h2 {
-  font-size: 24px;
-  font-weight: 600;
 }
 body nav > :nth-child(1) h2 {
   margin-bottom: 24px;
@@ -123,9 +128,6 @@ body nav form > :nth-child(1) > label > div .hiddenIcons > div img {
 body nav form > :nth-child(2) {
   margin: 10px 0px 24px 0px;
 }
-body nav form > :nth-child(2) .forgotPassword {
-  display: none;
-}
 body nav form > :nth-child(2) a {
   cursor: pointer;
   font-size: 13px;
@@ -133,9 +135,8 @@ body nav form > :nth-child(2) a {
 body nav form > :nth-child(3) {
   all: unset;
   border-radius: 7.11px;
-  background-color: #B2072D;
+  background-color: #b2072d;
   padding: 10px 0px;
-  font-size: 16px;
   font-weight: 600;
   text-align: center;
   cursor: pointer;
@@ -146,4 +147,87 @@ body nav form > :nth-child(3) {
 body nav form > :nth-child(3):hover {
   background: #db0534;
   transition: 0.3s;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 900px) {
+  body nav {
+    border: 2px solid rgba(208, 107, 129, 0.49);
+    padding: 20px 40px;
+  }
+  body nav > :nth-child(1) {
+    gap: 30px;
+  }
+  body nav > :nth-child(1) h2 {
+    margin-bottom: 20px;
+  }
+  body nav form > :nth-child(1) {
+    gap: 14px;
+  }
+  body nav form > :nth-child(1) > :nth-child(1) input {
+    padding: 4px 0px;
+  }
+  body nav form > :nth-child(1) > label {
+    gap: 7px;
+  }
+  body nav form > :nth-child(1) > label > div {
+    padding: 4px 8px;
+  }
+  body nav form > :nth-child(1) > label > div .hiddenIcons > div img {
+    max-width: 20px;
+  }
+  body nav form > :nth-child(2) {
+    margin: 8px 0px 20px 0px;
+  }
+  body nav form > :nth-child(3) {
+    padding: 8px 0px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  body nav {
+    padding: 20px 30px;
+    transform: translateY(-5%);
+  }
+  body nav > :nth-child(1) {
+    gap: 30px;
+  }
+  body nav > :nth-child(1) h2 {
+    margin-bottom: 20px;
+  }
+  body nav form > :nth-child(1) {
+    gap: 14px;
+  }
+  body nav form > :nth-child(1) > :nth-child(1) input {
+    padding: 4px 0px;
+  }
+  body nav form > :nth-child(1) > label {
+    gap: 7px;
+  }
+  body nav form > :nth-child(1) > label > div {
+    padding: 4px 8px;
+  }
+  body nav form > :nth-child(1) > label > div .hiddenIcons > div img {
+    max-width: 20px;
+  }
+  body nav form > :nth-child(2) {
+    margin: 8px 0px 20px 0px;
+  }
+  body nav form > :nth-child(3) {
+    padding: 8px 0px;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */
