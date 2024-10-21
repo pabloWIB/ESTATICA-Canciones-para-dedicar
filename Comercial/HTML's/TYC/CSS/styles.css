@@ -4,7 +4,7 @@
 body .cotenido {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #C36176 100%);
+  background: linear-gradient(180deg, #ffe4ea 0%, #f29caf 50%, #d56f86 100%);
 }
 body .cotenido > :nth-child(1) {
   width: 100%;

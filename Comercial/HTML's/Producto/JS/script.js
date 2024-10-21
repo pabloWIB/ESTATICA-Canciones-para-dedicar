@@ -18,25 +18,39 @@ function toggleAnimationAyudanos() {
     } 
 }
 
-window.addEventListener("scroll", toggleAnimationAyudanos);
-window.addEventListener("resize", toggleAnimationAyudanos);
-
-toggleAnimationAyudanos();
-
-// VIEWPORT ANIMATIONS 2 ---
-
-
-// RESET VIEWPORT ANIMATIONS
-
-const contentRepartir = document.getElementById('contentRepartir');
-    
-function scrollValue3() {
-    var scroll = window.scrollY;
-    if (scroll < 10) {
-        contentRepartir.classList.remove('AyudanosClass');
+function thirdSection() {
+    var targetSection = document.getElementById("thirdSection");
+    var thirdSectionSee = document.getElementById("thirdSectionSee");
+    if (isElementInViewport(thirdSectionSee)) {
+        targetSection.classList.add('thirdSectionAnimation');
     } 
 }
 
-window.addEventListener('scroll', scrollValue3);
+function resetViewportAnimations() {
+    var scroll = window.scrollY;
+    var contentRepartir = document.getElementById('contentRepartir');
+    var thirdSection = document.getElementById('thirdSection');
 
-// RESET VIEWPORT ANIMATIONS ---
+    if (scroll < 10) {
+        contentRepartir.classList.remove('AyudanosClass');
+        thirdSection.classList.remove('thirdSectionAnimation');
+    }
+}
+
+// Combine all scroll event listeners
+window.addEventListener("scroll", function() {
+    toggleAnimationAyudanos();
+    thirdSection();
+    resetViewportAnimations();
+});
+
+window.addEventListener("resize", function() {
+    toggleAnimationAyudanos();
+    thirdSection();
+});
+
+// Initial call
+toggleAnimationAyudanos();
+thirdSection();
+
+// VIEWPORT ANIMATIONS 2 ---

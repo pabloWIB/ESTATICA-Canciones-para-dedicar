@@ -4,144 +4,47 @@
 @import "../../../CSS/Fonts/fontSizes.css";
 
 body {
-  background: linear-gradient(180deg, #d06b81 30.07%, #fff 100%);
-}
-
-.fatherSection{
-  .generalBackground{
-
-  }
-  >:nth-child(2){
-    .firstSection {
-      display: flex;
-      flex-flow: column wrap;
-      position: relative;
+  background: linear-gradient(180deg, #D06B81 19.5%, #FFF 64.5%);
+  overflow-x: hidden;
+  .fatherSection{
+    position: relative;
+    .generalBackground{
       width: 100%;
-      padding-top: 2.5rem;
-      > :nth-child(1) {
-        width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
         z-index: 0;
-        background-image: url("../IMG/Vector.svg");
+        background-image: url("../IMG/Group\ 2253.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        img {
-          width: 100%;
-        }
-      }
-      > :nth-child(2) {
-        position: relative;
+        animation: waveAnimation 9s infinite;
+    }
+    >:nth-child(2){
+      position: relative;
+      .firstSection {
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 1.75rem;
-        margin: 0 auto;
-        width: 90%;
-        max-width: 1440px;
+        width: 100%;
+        padding-top: 2.5rem;
         > :nth-child(1) {
           display: flex;
           flex-flow: column wrap;
-          text-align: center;
+          align-items: center;
+          justify-content: center;
           gap: 1.75rem;
-          transform: translateY(-10%) scale(0.9);
-          opacity: 0%;
-          transition: 1s;
-          h1,
-          h2 {
-            color: white;
-          }
-          > div {
-            img {
-              width: 100%;
-              max-width: 400px;
-            }
-          }
-        }
-        .contentProductoEdit {
-          transform: translateY(0%) scale(1);
-          opacity: 1;
-        }
-        .envio_participa_beneficio {
-          margin-top: -2rem;
-        }
-        > :nth-child(3) {
-          display: flex;
-          flex-flow: column wrap;
           margin: 0 auto;
           width: 90%;
-          transform: translateY(50px);
-          opacity: 0%;
-          transition: 0.5s;
-          animation-delay: 0.3s;
-          > :nth-child(1) {
-            margin: 0 auto;
-            width: 100%;
-            text-align: center;
-            border-radius: 20px;
-            padding-top: 1.5rem;
-            padding-bottom: 7%;
-            box-shadow: 0px 0px 6.5px 0px #b8b8b8;
-            background: white;
-            > :nth-child(1) {
-              margin: 0 auto;
-              width: 90%;
-            }
-          }
-          > :nth-child(2) {
-            border-radius: 25px;
-            background: #d06b81;
-            margin: 0 auto;
-            width: 90%;
-            padding: 1.5rem 0rem;
-            margin-top: -2.5rem;
-            > :nth-child(1) {
-              margin: 0 auto;
-              width: 90%;
-              display: flex;
-              flex-flow: column wrap;
-              gap: 1rem;
-              align-items: center;
-              justify-content: center;
-              p {
-                text-align: center;
-                color: white;
-              }
-              div {
-                img {
-                  width: 100%;
-                  max-width: 50px;
-                }
-              }
-            }
-          }
-        }
-        .AyudanosClass {
-          transform: translateY(0px);
-          opacity: 100%;
-          transition: 0.5s;
-          animation-delay: 0.3s;
-        }
-      }
-    }
-    
-    @media (max-width: 900px) {
-      .firstSection {
-        padding-top: 2rem;
-        br {
-          display: none;
-        }
-        > :nth-child(2) {
-          gap: 1.4rem;
+          max-width: 1440px;
           > :nth-child(1) {
             display: flex;
             flex-flow: column wrap;
             text-align: center;
             gap: 1.75rem;
+            transform: translateY(-10%) scale(0.9);
+            opacity: 0%;
+            transition: 1s;
             h1,
             h2 {
               color: white;
@@ -149,31 +52,122 @@ body {
             > div {
               img {
                 width: 100%;
-                max-width: 280px;
+                max-width: 400px;
               }
             }
           }
+          .contentProductoEdit {
+            transform: translateY(0%) scale(1);
+            opacity: 1;
+          }
           .envio_participa_beneficio {
-            margin-top: -1.6rem;
+            margin-top: -2rem;
           }
           > :nth-child(3) {
+            display: flex;
+            flex-flow: column wrap;
+            margin: 0 auto;
+            width: 90%;
+            transform: translateY(50px);
+            opacity: 0%;
+            transition: 0.5s;
+            animation-delay: 0.3s;
             > :nth-child(1) {
-              padding-top: 1.2rem;
-              padding-bottom: 5.6%;
+              margin: 0 auto;
+              width: 100%;
+              text-align: center;
+              border-radius: 20px;
+              padding-top: 1.5rem;
+              padding-bottom: 7%;
+              box-shadow: 0px 0px 6.5px 0px #b8b8b8;
+              background: white;
+              > :nth-child(1) {
+                margin: 0 auto;
+                width: 90%;
+              }
             }
             > :nth-child(2) {
-              padding: 1.2rem 0rem;
-              margin-top: -1.35rem;
-    
+              border-radius: 25px;
+              background: #d06b81;
+              margin: 0 auto;
+              width: 90%;
+              padding: 1.5rem 0rem;
+              margin-top: -2.5rem;
               > :nth-child(1) {
-                gap: 0.8rem;
+                margin: 0 auto;
+                width: 90%;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
                 p {
                   text-align: center;
                   color: white;
                 }
                 div {
                   img {
-                    max-width: 40px;
+                    width: 100%;
+                    max-width: 50px;
+                  }
+                }
+              }
+            }
+          }
+          .AyudanosClass {
+            transform: translateY(0px);
+            opacity: 100%;
+            transition: 0.5s;
+            animation-delay: 0.3s;
+          }
+        }
+      }
+      @media (max-width: 900px) {
+        .firstSection {
+          padding-top: 2rem;
+          br {
+            display: none;
+          }
+          > :nth-child(1) {
+            gap: 1.4rem;
+            > :nth-child(1) {
+              display: flex;
+              flex-flow: column wrap;
+              text-align: center;
+              gap: 1.75rem;
+              h1,
+              h2 {
+                color: white;
+              }
+              > div {
+                img {
+                  width: 100%;
+                  max-width: 280px;
+                }
+              }
+            }
+            .envio_participa_beneficio {
+              margin-top: -1.6rem;
+            }
+            > :nth-child(3) {
+              > :nth-child(1) {
+                padding-top: 1.2rem;
+                padding-bottom: 5.6%;
+              }
+              > :nth-child(2) {
+                padding: 1.2rem 0rem;
+                margin-top: -1.35rem;
+      
+                > :nth-child(1) {
+                  gap: 0.8rem;
+                  p {
+                    text-align: center;
+                    color: white;
+                  }
+                  div {
+                    img {
+                      max-width: 40px;
+                    }
                   }
                 }
               }
@@ -181,109 +175,122 @@ body {
           }
         }
       }
-    }
-    
-    .secondSection {
-      display: flex;
-      flex-flow: column wrap;
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      padding: 2.5rem 0rem;
-      > :nth-child(1) {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 0;
-        background-image: url("../IMG/Vector\ 2.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        img {
-          width: 100%;
-        }
-      }
-      > :nth-child(2) {
-        position: relative;
+      .secondSection {
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 1.75rem;
-        margin: 0 auto;
-        width: 90%;
-        max-width: 1440px;
-        aside {
-          width: 85%;
-          .ag-timeline {
-            display: flex;
-            flex-flow: column wrap;
-            position: relative;
-            justify-content: flex-start;
-            margin: 0 auto;
-            width: 95%;
-            .ag-timeline_line {
-              width: 10px;
-              position: absolute;
-              top: 0;
-              left: 0;
-              height: 90%;
-              padding-left: 4%;
-              transform: translateY(2.5%);
-              .ag-timeline_line-progress {
-                width: 100%;
-                height: 20%;
-                background-color: #d06b81;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-              }
-            }
-            .ag-timeline_list {
+        width: 100%;
+        overflow: hidden;
+        padding: 2.5rem 0rem;
+        > :nth-child(1) {
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 1.75rem;
+          margin: 0 auto;
+          width: 90%;
+          max-width: 1440px;
+          aside {
+            width: 85%;
+            .ag-timeline {
               display: flex;
               flex-flow: column wrap;
-              gap: 3.5rem;
-              .ag-timeline_item {
+              position: relative;
+              justify-content: flex-start;
+              margin: 0 auto;
+              width: 95%;
+              .ag-timeline_line {
+                width: 10px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 90%;
+                padding-left: 4%;
+                transform: translateY(2.5%);
+                .ag-timeline_line-progress {
+                  width: 100%;
+                  height: 20%;
+                  background-color: #d06b81;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                }
+              }
+              .ag-timeline_list {
                 display: flex;
                 flex-flow: column wrap;
-                gap: 1.75rem;
-                margin: 0 auto;
-                width: 100%;
-                position: relative;
-                .ag-timeline-card_item {
+                gap: 3.5rem;
+                .ag-timeline_item {
                   display: flex;
                   flex-flow: column wrap;
-                  gap: 1rem;
-                  h2,
-                  h3,
-                  p {
-                    position: relative;
-                  }
-                  > div {
-                    img {
-                      width: 100%;
-                      max-width: 75px;
+                  gap: 1.75rem;
+                  margin: 0 auto;
+                  width: 100%;
+                  position: relative;
+                  .ag-timeline-card_item {
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: 1rem;
+                    h2,
+                    h3,
+                    p {
+                      position: relative;
+                    }
+                    > div {
+                      img {
+                        width: 100%;
+                        max-width: 75px;
+                      }
                     }
                   }
-                }
-                > :nth-child(1),
-                > :nth-child(3) {
-                  padding-left: 8%;
-                }
-                > :nth-child(2) {
-                  display: flex;
-                  flex-flow: column wrap;
-                  align-items: center;
-                  gap: 1.5rem;
                   > :nth-child(1),
+                  > :nth-child(3) {
+                    padding-left: 8%;
+                  }
                   > :nth-child(2) {
                     display: flex;
-                    flex-flow: row wrap;
+                    flex-flow: column wrap;
+                    align-items: center;
                     gap: 1.5rem;
-                    > div {
+                    > :nth-child(1),
+                    > :nth-child(2) {
+                      display: flex;
+                      flex-flow: row wrap;
+                      gap: 1.5rem;
+                      > div {
+                        flex: 1;
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: space-between;
+                        border-radius: 25px;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                        > :nth-child(1) {
+                          margin: 0 auto;
+                          width: 90%;
+                          display: flex;
+                          flex-flow: column wrap;
+                          align-items: flex-start;
+                          gap: 0.5rem;
+                          padding: 1rem 0rem;
+                        }
+                        > :nth-child(2) {
+                          background: #d06b81;
+                          border-radius: 0px 0px 25px 25px;
+                          display: flex;
+                          flex-flow: row wrap;
+                          align-items: center;
+                          justify-content: center;
+                          padding: 1rem 0rem;
+                          img {
+                            width: 100%;
+                            max-width: 40px;
+                          }
+                        }
+                      }
+                    }
+                    > :nth-child(3) {
                       flex: 1;
                       display: flex;
                       flex-flow: column wrap;
@@ -291,6 +298,7 @@ body {
                       border-radius: 25px;
                       background-color: rgb(255, 255, 255);
                       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                      width: 100%;
                       > :nth-child(1) {
                         margin: 0 auto;
                         width: 90%;
@@ -303,150 +311,23 @@ body {
                       > :nth-child(2) {
                         background: #d06b81;
                         border-radius: 0px 0px 25px 25px;
-                        display: flex;
-                        flex-flow: row wrap;
-                        align-items: center;
+      
                         justify-content: center;
                         padding: 1rem 0rem;
-                        img {
-                          width: 100%;
-                          max-width: 40px;
-                        }
-                      }
-                    }
-                  }
-                  > :nth-child(3) {
-                    flex: 1;
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-between;
-                    border-radius: 25px;
-                    background-color: rgb(255, 255, 255);
-                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-                    width: 100%;
-                    > :nth-child(1) {
-                      margin: 0 auto;
-                      width: 90%;
-                      display: flex;
-                      flex-flow: column wrap;
-                      align-items: flex-start;
-                      gap: 0.5rem;
-                      padding: 1rem 0rem;
-                    }
-                    > :nth-child(2) {
-                      background: #d06b81;
-                      border-radius: 0px 0px 25px 25px;
-    
-                      justify-content: center;
-                      padding: 1rem 0rem;
-                      > :nth-child(1) {
-                        display: flex;
-                        flex-flow: row wrap;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 1.5rem;
-                        img {
-                          width: 100%;
-                          max-width: 40px;
-                        }
-                        > :nth-child(2) {
+                        > :nth-child(1) {
+                          display: flex;
+                          flex-flow: row wrap;
+                          align-items: center;
+                          justify-content: center;
+                          gap: 1.5rem;
                           img {
                             width: 100%;
-                            max-width: 46px;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-                .finish_item {
-                  margin-top: -1.5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-      
-    }
-    
-    @media (max-width: 900px) {
-      .secondSection {
-        padding: 1.5rem 0rem;
-        > :nth-child(2) {
-          gap: 1.25rem;
-          aside {
-            width: 90%;
-            .ag-timeline {
-              display: flex;
-              flex-flow: column wrap;
-              position: relative;
-              justify-content: flex-start;
-              margin: 0 auto;
-              width: 100%;
-              .ag-timeline_line {
-                width: 7.5px;
-                padding-left: 4%;
-                transform: translateY(1.5%);
-              }
-              .ag-timeline_list {
-                gap: 2.5rem;
-                .ag-timeline_item {
-                  gap: 1.5rem;
-                  .ag-timeline-card_item {
-                    display: flex;
-                    flex-flow: column wrap;
-                    gap: 0.75rem;
-                    > div {
-                      img {
-                        width: 100%;
-                        max-width: 55px;
-                      }
-                    }
-                  }
-                  > :nth-child(1),
-                  > :nth-child(3) {
-                    padding-left: 8%;
-                  }
-                  > :nth-child(2) {
-                    display: flex;
-                    flex-flow: column wrap;
-                    align-items: center;
-                    gap: 1rem;
-                    > :nth-child(1),
-                    > :nth-child(2) {
-                      flex-flow: column wrap;
-                      gap: 1rem;
-                      > div {
-                        > :nth-child(1) {
-                          width: 95%;
-                          gap: 0.25rem;
-                          padding: 0.5rem 0rem;
-                        }
-                        > :nth-child(2) {
-                          padding: 0.5rem 0rem;
-                          img {
-                            max-width: 33px;
-                          }
-                        }
-                      }
-                    }
-                    > :nth-child(3) {
-                      > :nth-child(1) {
-                        width: 95%;
-                        gap: 0.25rem;
-                        padding: 0.5rem 0rem;
-                      }
-                      > :nth-child(2) {
-                        padding: 0.5rem 0rem;
-                        > :nth-child(1) {
-                          gap: 1rem;
-                          img {
-                            max-width: 33px;
+                            max-width: 40px;
                           }
                           > :nth-child(2) {
                             img {
-                              max-width: 39px;
+                              width: 100%;
+                              max-width: 46px;
                             }
                           }
                         }
@@ -462,41 +343,155 @@ body {
           }
         }
       }
-    }
-    .thirdSection {
-      margin: 0 auto;
-      width: 90%;
-      max-width: 1250px;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      place-content: center;
-      position: relative;
-      > :nth-child(1) {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-      }
-      > :nth-child(2) {
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        gap: 1rem;
-        > div {
-          width: 100%;
-          max-width: 350px;
-          img {
-            width: 100%;
+      @media (max-width: 900px) {
+        .secondSection {
+          padding: 1.5rem 0rem;
+          > :nth-child(1) {
+            gap: 1.25rem;
+            aside {
+              width: 90%;
+              .ag-timeline {
+                display: flex;
+                flex-flow: column wrap;
+                position: relative;
+                justify-content: flex-start;
+                margin: 0 auto;
+                width: 100%;
+                .ag-timeline_line {
+                  width: 7.5px;
+                  padding-left: 4%;
+                  transform: translateY(1.5%);
+                }
+                .ag-timeline_list {
+                  gap: 2.5rem;
+                  .ag-timeline_item {
+                    gap: 1.5rem;
+                    .ag-timeline-card_item {
+                      display: flex;
+                      flex-flow: column wrap;
+                      gap: 0.75rem;
+                      > div {
+                        img {
+                          width: 100%;
+                          max-width: 55px;
+                        }
+                      }
+                    }
+                    > :nth-child(1),
+                    > :nth-child(3) {
+                      padding-left: 8%;
+                    }
+                    > :nth-child(2) {
+                      display: flex;
+                      flex-flow: column wrap;
+                      align-items: center;
+                      gap: 1rem;
+                      > :nth-child(1),
+                      > :nth-child(2) {
+                        flex-flow: column wrap;
+                        gap: 1rem;
+                        > div {
+                          > :nth-child(1) {
+                            width: 95%;
+                            gap: 0.25rem;
+                            padding: 0.5rem 0rem;
+                          }
+                          > :nth-child(2) {
+                            padding: 0.5rem 0rem;
+                            img {
+                              max-width: 33px;
+                            }
+                          }
+                        }
+                      }
+                      > :nth-child(3) {
+                        > :nth-child(1) {
+                          width: 95%;
+                          gap: 0.25rem;
+                          padding: 0.5rem 0rem;
+                        }
+                        > :nth-child(2) {
+                          padding: 0.5rem 0rem;
+                          > :nth-child(1) {
+                            gap: 1rem;
+                            img {
+                              max-width: 33px;
+                            }
+                            > :nth-child(2) {
+                              img {
+                                max-width: 39px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .finish_item {
+                      margin-top: -1.5rem;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
+      }
+      .thirdSection {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1250px;
+        padding: 2rem 0rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        place-content: center;
+        position: relative;
+        transform: translateY(-10%) scale(0.9);
+        opacity: 0%;
+        transition: 1s;
+        > :nth-child(1) {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+        > :nth-child(2) {
+          position: relative;
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          gap: 1rem;
+          > div {
+            width: 100%;
+            max-width: 350px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .thirdSectionAnimation{
+        transform: translateY(0%) scale(1);
+        opacity: 100%;
+        transition: 1s;
       }
     }
   }
 }
 
+@keyframes waveAnimation {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.025);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}

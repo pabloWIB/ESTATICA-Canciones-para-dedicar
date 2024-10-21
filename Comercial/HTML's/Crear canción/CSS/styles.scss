@@ -50,6 +50,7 @@ body {
     background: linear-gradient(180deg, #fff 0%, #d06b81 73.5%, #bf5e73 100%);
     > :nth-child(1) {
       background-image: url("../IMG/Vector.svg");
+      animation: waveAnimation 9s infinite;
     }
     > :nth-child(2) {
       > :nth-child(1) {
@@ -99,6 +100,7 @@ body {
     background: linear-gradient(180deg, #FFF 0%, #FFE3E9 37.5%, #D06B81 77%);
     > :nth-child(1) {
       background-image: url("../IMG/Vector2.svg");
+      animation: waveAnimation 9s infinite;
     }
     > :nth-child(2) {
     }
@@ -110,8 +112,24 @@ body {
     background: linear-gradient(180deg, #FFF 0%, #FFE3E9 37.5%, #d18695 77%);
     > :nth-child(1) {
       background-image: url("../IMG/Vector3.svg");
+      animation: waveAnimation 9s infinite;
     }
     > :nth-child(2) {
     }
+  }
+}
+
+@keyframes waveAnimation {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
   }
 }

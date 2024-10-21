@@ -1,3 +1,3 @@
-Descargar todas las imagenes del Figma en carpetas correspondientes
+Pasar admin a subcarpeta 
 
-Descargar todas las imagenes en svg
+Crear carrusel

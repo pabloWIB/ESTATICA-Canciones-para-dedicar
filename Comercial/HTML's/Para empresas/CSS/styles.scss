@@ -24,6 +24,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    animation: waveAnimation 9s infinite;
   }
   > :nth-child(2) {
     position: relative;
@@ -261,5 +262,20 @@ body {
         }
       }
     }
+  }
+}
+
+@keyframes waveAnimation {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.025);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
   }
 }
