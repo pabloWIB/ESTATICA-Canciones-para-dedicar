@@ -1,4 +1,52 @@
-@import 'Nav/nav.css';
-@import 'Footer/footer.css';
-@import 'EnParBen/envio_participa_beneficio.css';
-@import 'Fonts/fontSizes.css';/*# sourceMappingURL=styles.css.map */
+@import "Nav/nav.css";
+@import "Footer/footer.css";
+@import "EnParBen/envio_participa_beneficio.css";
+@import "Fonts/fontSizes.css";
+.brand_slider_main {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  position: relative;
+}
+
+.swiper {
+  width: 90%;
+}
+
+.brand_item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 1em;
+}
+
+.brand_item img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+div[class^=swiper-button] {
+  position: absolute;
+  top: 50%;
+  display: block !important;
+}
+
+div[class^=swiper-button-next] {
+  right: 2%;
+}
+
+div[class^=swiper-button-prev] {
+  left: 2%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+  color: #000;
+}
+
+.swiper-button-lock,
+div:empty {
+  display: block !important;
+}/*# sourceMappingURL=styles.css.map */

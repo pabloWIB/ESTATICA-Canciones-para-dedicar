@@ -17,6 +17,7 @@ body .cotenido > :nth-child(1) {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  animation: waveAnimation 9s infinite;
 }
 body .cotenido > :nth-child(1) img {
   width: 100%;
@@ -61,4 +62,19 @@ body footer > :nth-child(1) > :nth-child(2),
 body footer > :nth-child(1) > :nth-child(3),
 body footer > :nth-child(1) > :nth-child(4) {
   display: none;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

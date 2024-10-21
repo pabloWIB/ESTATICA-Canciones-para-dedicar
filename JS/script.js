@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     if (email && password) {
-        window.location.href = '../admin.html'; 
+        window.location.href = '../Comercial/HTML\'s/Admin/index.html';
     } else {
         alert('Por favor, completa ambos campos.');
     }
