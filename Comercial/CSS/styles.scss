@@ -4,50 +4,94 @@
 @import "Fonts/fontSizes.css";
 
 .brand_slider_main {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   position: relative;
-}
-
-.swiper {
-  width: calc(100% - 10%);
-}
-
-.brand_item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  gap: 1em;
-}
-
-.brand_item img {
-  max-width: 100%;
-  border-radius: 50%;
-  margin: auto;
-}
-
-div[class^="swiper-button"] {
-  position: absolute;
-  top: 50%;
-  display: block !important;
-}
-
-div[class^="swiper-button-next"] {
-  right: 2%;
-}
-
-div[class^="swiper-button-prev"] {
-  left: 2%;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 25px !important;
-  color: #000;
-}
-
-.swiper-button-lock,
-div:empty {
-  display: block !important;
+  box-shadow: 0px 0px 6.5px 0px #b8b8b8;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-radius: 25px;
+  background: white;
+  .container {
+    .swiper {
+      width: calc(100%);
+      .text-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 96.5%;
+        margin: 0 auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        > :nth-child(1) {
+          display: flex;
+          flex-flow: row wrap;
+          flex: 1;
+        }
+        .buttons {
+          position: relative;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          height: 4rem;
+          width: 100px;
+          max-width: 100px;
+          .swiper-button-next:after,
+          .swiper-button-prev:after {
+            font-size: 20px !important;
+            color: #3d3d3d;
+          }
+          .siguiente:hover{
+            color: greenyellow;
+          }
+        }
+      }
+      .brand_item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        gap: 1em;
+        img {
+          max-width: 100%;
+          border-radius: 50%;
+          margin: auto;
+        }
+      }
+      .swiper-wrapper{
+        padding-left: 1.6rem;
+        .specialBoxSlider {
+          border-radius: 16px;
+          border: 1px solid #d06b81;
+          display: grid;
+          flex-flow: row wrap;
+          place-content: center;
+          align-items: center;
+          height: 100%;
+          padding: 1rem 0rem;
+          cursor: pointer;
+          > :nth-child(1) {
+            margin: 0 auto;
+            width: 90%;
+            > :nth-child(1) {
+              img {
+                width: 100%;
+                max-width: 250px;
+                border-radius: 12px;
+              }
+            }
+            p{
+              cursor: default;
+            }
+            p::selection{
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

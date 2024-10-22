@@ -3,50 +3,93 @@
 @import "EnParBen/envio_participa_beneficio.css";
 @import "Fonts/fontSizes.css";
 .brand_slider_main {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   position: relative;
-}
-
-.swiper {
+  box-shadow: 0px 0px 6.5px 0px #b8b8b8;
+  margin: 0 auto;
   width: 90%;
+  max-width: 1440px;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-radius: 25px;
+  background: white;
 }
-
-.brand_item {
+.brand_slider_main .container .swiper {
+  width: 100%;
+}
+.brand_slider_main .container .swiper .text-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 96.5%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.brand_slider_main .container .swiper .text-buttons > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+.brand_slider_main .container .swiper .text-buttons .buttons {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 100px;
+  max-width: 100px;
+}
+.brand_slider_main .container .swiper .text-buttons .buttons .swiper-button-next:after,
+.brand_slider_main .container .swiper .text-buttons .buttons .swiper-button-prev:after {
+  font-size: 20px !important;
+  color: #3d3d3d;
+}
+.brand_slider_main .container .swiper .text-buttons .buttons .siguiente:hover {
+  color: greenyellow;
+}
+.brand_slider_main .container .swiper .brand_item {
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: center;
   gap: 1em;
 }
-
-.brand_item img {
+.brand_slider_main .container .swiper .brand_item img {
   max-width: 100%;
   border-radius: 50%;
   margin: auto;
 }
-
-div[class^=swiper-button] {
-  position: absolute;
-  top: 50%;
-  display: block !important;
+.brand_slider_main .container .swiper .swiper-wrapper {
+  padding-left: 1.6rem;
 }
-
-div[class^=swiper-button-next] {
-  right: 2%;
+.brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider {
+  border-radius: 16px;
+  border: 1px solid #d06b81;
+  display: grid;
+  flex-flow: row wrap;
+  place-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0rem;
+  cursor: pointer;
 }
-
-div[class^=swiper-button-prev] {
-  left: 2%;
+.brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
 }
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 25px !important;
-  color: #000;
+.brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 12px;
 }
-
-.swiper-button-lock,
-div:empty {
-  display: block !important;
+.brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) p {
+  cursor: default;
+}
+.brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) p::-moz-selection {
+  background: none;
+}
+.brand_slider_main .container .swiper .swiper-wrapper .specialBoxSlider > :nth-child(1) p::selection {
+  background: none;
 }/*# sourceMappingURL=styles.css.map */
