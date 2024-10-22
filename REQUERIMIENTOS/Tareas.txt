@@ -1,1 +1,3 @@
 Crear carrusel
+Cambiar imgen de tienda en administrador y borrar la seccion contactos
+API de email
