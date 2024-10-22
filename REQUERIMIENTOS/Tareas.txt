@@ -1,1 +1,8 @@
 Crear carrusel
+
+Buscar una página para tomar email sender 
+Burcar una página para tomar payment form
+
+Empezar con inicio
+Cambiar imgen de tienda en administrador y borrar la seccion contactos
+API de email
