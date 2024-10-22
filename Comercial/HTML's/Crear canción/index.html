@@ -146,35 +146,36 @@
 					<h3>Ingresa tu información</h3>
 					<form action="Previsualizar.html" id="formCreaCanción">
 
-						<label for="Email"></label>
-						<input type="email" name="Email" id="Email" placeholder="juangomez123@ejemplo.com">
+						<label for="Email"><h3>Email</h3></label>
+						<input type="email" name="Email" id="Email" placeholder="juangomez123@ejemplo.com" class="sameStyle">
 
-						<label for=""></label>
-						<select name="" id="">
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
+						<label for="tipoUsuario">¿Particular, anónimo o empresa?</label>
+						<select name="tipoUsuario" id="tipoUsuario" class="sameStyle">
+							<option value="" disabled selected>Selecciona una opción</option>
+							<option value="Particular">Particular</option>
+							<option value="Empresa">Empresa</option>
+							<option value="Anónimo">Anónimo</option>
 						</select>
 
 						<h3>Selecciona a tu gusto</h3>
 
-						<label for=""></label>
-						<select name="" id="">
-							<option value=""></option>
-							<option value=""></option>
+						<label for="Tonos"><h3>Tonos</h3></label>
+						<select name="tipoTonos" id="tipoTonos" class="sameStyle">
+							<option value="" disabled selected>Selecciona una opción</option>
+							<option value="Graves">Graves</option>
+							<option value="Agudos">Agudos</option>
 						</select>
 
-						<input type="checkbox">
-						<label for="">Dueto: Elige varias voces a la vez por solo 28 € más (Impuestos incluidos)</label>
+						<div class="checkboxDiv">                            
+							<input type="checkbox" id="duetoCheckbox">
+							<label for="duetoCheckbox">Dueto: Elige varias voces a la vez por solo 28 € más (Impuestos incluidos)</label>
+						</div>
 
-						<lebel></lebel>
-						<select name="" id="">
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
-							<option value=""></option>
+						<label for="tipoVoces"><h3>Voces</h3></label>
+						<select name="tipoVoces" id="tipoVoces" class="sameStyle" disabled>
+							<option value="" disabled selected>Selecciona una opción</option>
 						</select>
-						<button>Siguient</button>
+						<button>Siguiente</button>
 					</form>
 				</div>
 			</div>
