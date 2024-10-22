@@ -1,6 +1,0 @@
-Crear carrusel
-
-Buscar una página para tomar email sender 
-Burcar una página para tomar payment form
-
-Empezar con inicio
