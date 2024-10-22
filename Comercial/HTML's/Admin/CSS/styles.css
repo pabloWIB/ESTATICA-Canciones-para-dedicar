@@ -1,2 +1,111 @@
 @import url(https://unpkg.com/@webpixels/css@1.1.5/dist/index.css);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css");
+
+.bg-surface-secondary {
+    background: linear-gradient(180deg, #FFF 0%, #FFE3E9 37.5%, rgba(208, 107, 129, 0.56) 77%);
+    position: relative;
+}
+
+.main-vector-bg img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+/*vertical navbar*/
+.text-primary {
+    --x-text-opacity: 1;
+    color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+
+.bg-soft-primary {
+    background-color: #D06B81 !important;
+}
+.navbar-vertical.navbar-light .navbar-nav .nav-link i, .navbar-vertical.navbar-light .navbar-nav .nav-link svg {
+    color: #D06B81;
+}
+.navbar-vertical.navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+    background-color: #d06b8112;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #D06B81;
+}
+.text-muted {
+    --x-text-opacity: 1;
+    color: #8c8c8c !important;
+}
+
+/*body*/
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    color: #000;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #D06B81;
+    border-color: #D06B81;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #D06B81;
+    background-color: transparent;
+    border-color: transparent transparent #D06B81;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #D06B81;
+}
+.nav-link {
+    color: #8c8c8c;
+}
+
+.bg-tertiary,
+.bg-primary,
+.bg-info,
+.bg-warning {
+    background-color: #D06B81 !important;
+}
+
+/*table*/
+
+.table {
+    --x-table-bg: transparent;
+    --x-table-accent-bg: transparent;
+    --x-table-striped-color: #D06B81;
+    --x-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --x-table-active-color: #D06B81;
+    --x-table-active-bg: rgba(0, 0, 0, 0.1);
+    --x-table-hover-color: #000;
+    --x-table-hover-bg: #d06b8112;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #000;
+    vertical-align: middle;
+    border-color: #e7eaf0;
+}
+.table.table-light thead th, .table .thead-light th {
+    background-color: #d06b8112;
+    color: #000;
+}
+
+a.text-muted:hover, a.text-heading:hover, a.text-current:hover {
+    color: #D06B81 !important;
+}
+.badge-dot{
+    color: #000000;
+}
+.btn-neutral {
+    color: #8c8c8c;
+}
+.btn-neutral:hover {
+    color: #D06B81;
+    background-color: #d06b8112;
+    border-color: #d06b8112;
+}
+
+.text-danger-hover{
+    background-color: #D06B81;
+    color: #FFF;
+}
