@@ -4,29 +4,33 @@
 body {
   background: linear-gradient(180deg, #fff 0%, #ffe9ee 100%);
 }
-
-.secondSection {
-  display: flex;
-  flex-flow: column wrap;
+body .fatherSection {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  padding: 2.5rem 0rem;
 }
-.secondSection > :nth-child(1) {
+body .fatherSection .generalBackground {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 0;
-  background-image: url("../IMG/Vector.svg");
+  background-image: url("../IMG/Group 2253.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  animation: waveAnimation 9s infinite;
 }
-.secondSection > :nth-child(2) {
+body .fatherSection > :nth-child(2) {
   position: relative;
+}
+body .fatherSection > :nth-child(2) .firstSection {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -36,39 +40,255 @@ body {
   width: 90%;
   max-width: 1440px;
 }
-.secondSection > :nth-child(2) > :nth-child(1) {
-  margin: 3rem 0rem;
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
   text-align: center;
-  opacity: 0;
-  transform: translateY(-50%);
+  gap: 1.75rem;
+  transform: translateY(-10%) scale(0.9);
+  opacity: 0%;
   transition: 1s;
 }
-.secondSection > :nth-child(2) .firstSectionFaqsAnimation {
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) h1,
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) h2 {
+  color: rgb(0, 0, 0);
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) > div img {
+  width: 100%;
+  max-width: 400px;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) .contentProductoEdit {
+  transform: translateY(0%) scale(1);
   opacity: 1;
-  transform: translateY(0%);
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) .envio_participa_beneficio {
+  margin-top: -2rem;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 90%;
+  transform: translateY(50px);
+  opacity: 0%;
   transition: 0.5s;
+  animation-delay: 0.3s;
 }
-.secondSection > :nth-child(2) aside {
-  width: 85%;
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(1) {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 7%;
+  box-shadow: 0px 0px 6.5px 0px #b8b8b8;
+  background: white;
 }
-.secondSection > :nth-child(2) aside .ag-timeline {
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) {
+  border-radius: 25px;
+  background: #d06b81;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.5rem 0rem;
+  margin-top: -2.5rem;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
+  text-align: center;
+  color: white;
+}
+body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
+  width: 100%;
+  max-width: 50px;
+}
+@media (max-width: 900px) {
+  body .fatherSection > :nth-child(2) .firstSection {
+    padding-top: 2rem;
+  }
+  body .fatherSection > :nth-child(2) .firstSection br {
+    display: none;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) {
+    gap: 1.4rem;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    gap: 1.75rem;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) h1,
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) h2 {
+    color: white;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(1) > div img {
+    width: 100%;
+    max-width: 280px;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) .envio_participa_beneficio {
+    margin-top: -1.6rem;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(1) {
+    padding-top: 1.2rem;
+    padding-bottom: 5.6%;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) {
+    padding: 1.2rem 0rem;
+    margin-top: -1.35rem;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+    gap: 0.8rem;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) p {
+    text-align: center;
+    color: white;
+  }
+  body .fatherSection > :nth-child(2) .firstSection > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) div img {
+    max-width: 40px;
+  }
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(1) > div {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(1) > div > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(1) > div > :nth-child(2) {
+  background: #d06b81;
+  border-radius: 0px 0px 25px 25px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(1) > div > :nth-child(2) img {
+  width: 100%;
+  max-width: 40px;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(2) > :nth-child(2) {
+  background: #d06b81;
+  border-radius: 0px 0px 25px 25px;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(2) > :nth-child(2) > :nth-child(1) {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(2) > :nth-child(2) > :nth-child(1) img {
+  width: 100%;
+  max-width: 40px;
+}
+body .fatherSection > :nth-child(2) .firstSectionAbove > :nth-child(1) > :nth-child(2) > :nth-child(2) > :nth-child(1) > :nth-child(2) img {
+  width: 100%;
+  max-width: 46px;
+}
+body .fatherSection > :nth-child(2) .secondSection {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  overflow: hidden;
+  padding: 2.5rem 0rem;
+  padding-bottom: 5rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside {
+  width: 100%;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline {
   display: flex;
   flex-flow: column wrap;
   position: relative;
   justify-content: flex-start;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_line {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_line {
   width: 10px;
   position: absolute;
   top: 0;
   left: 0;
   height: 90%;
   padding-left: 4%;
-  transform: translateY(2.5%);
+  transform: translateY(1.2%);
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_line .ag-timeline_line-progress {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_line .ag-timeline_line-progress {
   width: 100%;
   height: 20%;
   background-color: #d06b81;
@@ -77,12 +297,12 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list {
   display: flex;
   flex-flow: column wrap;
   gap: 3.5rem;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item {
   display: flex;
   flex-flow: column wrap;
   gap: 1.75rem;
@@ -90,14 +310,225 @@ body {
   width: 100%;
   position: relative;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
   display: flex;
   flex-flow: column wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item > div {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h2,
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item h3,
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item p {
+  position: relative;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
+  width: 100%;
+  max-width: 75px;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(1),
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(3) {
   padding-left: 8%;
 }
-.secondSection > :nth-child(2) aside .ag-timeline .ag-timeline_list .ag-timeline_item .finish_item {
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) {
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  place-content: center;
+  border-radius: 25px;
+  padding: 2% 0%;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div {
+  width: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.75rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > div {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  flex: 1;
+  gap: 1rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > div > div {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  gap: 1rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > div > div > div {
+  border-radius: 16px;
+  border: 1px solid #D06B81;
+  flex: 1;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2.25% 0%;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > div > div > div > div {
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1.5rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > div > div > div > div > :nth-child(1) {
+  width: 100%;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > div > div > div > div > :nth-child(1) img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2), body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div, body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > div {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(1), body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > div > :nth-child(1) {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(2), body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > div > :nth-child(2) {
+  background: #d06b81;
+  border-radius: 0px 0px 25px 25px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(2) img, body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > div > :nth-child(2) img {
+  width: 100%;
+  max-width: 40px;
+}
+body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .finish_item {
   margin-top: -1.5rem;
+}
+@media (max-width: 900px) {
+  body .fatherSection > :nth-child(2) .secondSection {
+    padding: 1.5rem 0rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) {
+    gap: 1.25rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside {
+    width: 90%;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 100%;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_line {
+    width: 7.5px;
+    padding-left: 4%;
+    transform: translateY(1.5%);
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list {
+    gap: 2.5rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item {
+    gap: 1.5rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.75rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .ag-timeline-card_item > div img {
+    width: 100%;
+    max-width: 55px;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(1),
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(3) {
+    padding-left: 8%;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1),
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) {
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(1),
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(1) {
+    width: 95%;
+    gap: 0.25rem;
+    padding: 0.5rem 0rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(2),
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(2) {
+    padding: 0.5rem 0rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(1) > div > :nth-child(2) img,
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(2) > div > :nth-child(2) img {
+    max-width: 33px;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(1) {
+    width: 95%;
+    gap: 0.25rem;
+    padding: 0.5rem 0rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(2) {
+    padding: 0.5rem 0rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) {
+    gap: 1rem;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) img {
+    max-width: 33px;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item > :nth-child(2) > :nth-child(3) > :nth-child(2) > :nth-child(1) > :nth-child(2) img {
+    max-width: 39px;
+  }
+  body .fatherSection > :nth-child(2) .secondSection > :nth-child(1) aside .ag-timeline .ag-timeline_list .ag-timeline_item .finish_item {
+    margin-top: -1.5rem;
+  }
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.025);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */
