@@ -33,7 +33,8 @@ p,
 span,
 label,
 input,
-button {
+button ul,
+li {
   font-size: 18px;
 }
 
@@ -41,7 +42,8 @@ p,
 span,
 input,
 select,
-option {
+option ul,
+li {
   font-weight: 500;
 }
 
@@ -63,7 +65,8 @@ option {
   span,
   label,
   input,
-  button {
+  button ul,
+  li {
     font-size: 16px;
   }
 }
@@ -85,7 +88,8 @@ option {
   span,
   label,
   input,
-  button {
+  button ul,
+  li {
     font-size: 14px;
   }
 }

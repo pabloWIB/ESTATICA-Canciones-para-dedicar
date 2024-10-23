@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <title>Slider Ejemplo</title>
+    <style>
+        /* Estilos básicos */
+        .brand_slider_main {
+            margin-bottom: 50px;
+        }
+        .swiper {
+            width: 100%;
+            height: 300px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background: #f0f0f0;
+        }
+        .specialBoxSlider {
+            text-align: center;
+        }
+        .specialBoxSlider img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="brand_slider_main">
+    <div class="container">
+        <div class="swiper card-slider" id="slider1">
+            <div class="text-buttons">
+                <h3>Elige el estilo musical al componer canciones</h3>
+                <div class="buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Pop.png" alt="Pop">
+                        <p>Pop</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Pop Rock.png" alt="Pop Rock">
+                        <p>Pop Rock</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Hip-Hop.png" alt="Hip-Hop">
+                        <p>Hip-Hop</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Bachata.png" alt="Bachata">
+                        <p>Bachata</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Reggaeton.png" alt="Reggaeton">
+                        <p>Reggaeton</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Heavy.png" alt="Heavy Metal">
+                        <p>Heavy Metal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="brand_slider_main">
+    <div class="container">
+        <div class="swiper card-slider" id="slider2">
+            <div class="text-buttons">
+                <h3>Otro estilo musical</h3>
+                <div class="buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Pop.png" alt="Pop">
+                        <p>Pop</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Pop Rock.png" alt="Pop Rock">
+                        <p>Pop Rock</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Hip-Hop.png" alt="Hip-Hop">
+                        <p>Hip-Hop</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Bachata.png" alt="Bachata">
+                        <p>Bachata</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Reggaeton.png" alt="Reggaeton">
+                        <p>Reggaeton</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialBoxSlider">
+                        <img src="IMG/WEB IMAGES/EEEMACC/Heavy.png" alt="Heavy Metal">
+                        <p>Heavy Metal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const slider1 = new Swiper('#slider1', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '#slider1 .swiper-button-next',
+            prevEl: '#slider1 .swiper-button-prev',
+        },
+    });
+
+    const slider2 = new Swiper('#slider2', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '#slider2 .swiper-button-next',
+            prevEl: '#slider2 .swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
