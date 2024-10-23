@@ -73,11 +73,11 @@ nav {
             height: 2px;
             transform-origin: right;
             transition: transform var(--animation-primary);
-            transform: scaleX(0);
+            transform: scaleX(0) ;
           }
           .link-click:hover::before {
             transform-origin: left;
-            transform: scaleX(1);
+            transform: scaleX(1) ;
           }
           .link-click::after,
           .link-click::before {
@@ -89,6 +89,7 @@ nav {
           font-weight: 600;
           cursor: pointer;
           transition: .3s;
+          transition-delay: .3s;
           &:hover{
             color: #d06b81;
             transition: .3s;
