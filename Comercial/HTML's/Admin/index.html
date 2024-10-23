@@ -48,6 +48,7 @@
 	</script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="CSS/styles.css">
 	<title>Administrador | Dashboard</title>
 </head>
@@ -66,7 +67,7 @@
 				</button>
 				<!-- Brand -->
 				<a class="navbar-brand py-lg-2 mb-lg-5 px-lg-6 me-0" href="#">
-					<img src="../../../Comercial/IMG/WEB IMAGES/LOGOS/CPDPNG.png" alt="Logo canciones para dedicar">
+					<img class="brand-logo" src="../../../Comercial/IMG/WEB IMAGES/LOGOS/CPDPNG.png" alt="Logo canciones para dedicar">
 				</a>
 				<!-- User menu (mobile) -->
 				<div class="navbar-user d-lg-none">
@@ -84,9 +85,9 @@
 						</a>
 						<!-- Menu -->
 						<div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarAvatar">
-							<a href="#" class="dropdown-item">Profile</a>
-							<a href="#" class="dropdown-item">Settings</a>
-							<a href="#" class="dropdown-item">Billing</a>
+							<a href="#" class="dropdown-item">Perfil</a>
+							<a href="#" class="dropdown-item">Configuración</a>
+							<a href="#" class="dropdown-item">Cartera</a>
 							<hr class="dropdown-divider">
 							<a href="../../../index.html" class="dropdown-item">Salir</a>
 						</div>
@@ -126,93 +127,14 @@
 					</ul>
 					<!-- Divider -->
 					<hr class="navbar-divider my-5 opacity-20">
-					<!-- Navigation -->
-					<ul class="navbar-nav mb-md-4">
-						<li>
-							<div class="nav-link text-xs font-semibold text-uppercase text-muted ls-wide" href="#">
-								Contactos
-								<span
-									class="badge bg-soft-primary text-primary rounded-pill d-inline-flex align-items-center ms-4">13</span>
-							</div>
-						</li>
-						<li>
-							<a href="#" class="nav-link d-flex align-items-center">
-								<div class="me-4">
-									<div class="position-relative d-inline-block text-white">
-										<img alt="Image Placeholder"
-											src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
-											class="avatar rounded-circle">
-										<span
-											class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
-									</div>
-								</div>
-								<div>
-									<span class="d-block text-sm font-semibold">
-										Marie Claire
-									</span>
-									<span class="d-block text-xs text-muted font-regular">
-										Paris, FR
-									</span>
-								</div>
-								<div class="ms-auto">
-									<i class="bi bi-chat"></i>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="nav-link d-flex align-items-center">
-								<div class="me-4">
-									<div class="position-relative d-inline-block text-white">
-										<span class="avatar bg-soft-warning text-warning rounded-circle">JW</span>
-										<span
-											class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-success rounded-circle"></span>
-									</div>
-								</div>
-								<div>
-									<span class="d-block text-sm font-semibold">
-										Michael Jordan
-									</span>
-									<span class="d-block text-xs text-muted font-regular">
-										Bucharest, RO
-									</span>
-								</div>
-								<div class="ms-auto">
-									<i class="bi bi-chat"></i>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="nav-link d-flex align-items-center">
-								<div class="me-4">
-									<div class="position-relative d-inline-block text-white">
-										<img alt="..."
-											src="https://images.unsplash.com/photo-1610899922902-c471ae684eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
-											class="avatar rounded-circle">
-										<span
-											class="position-absolute bottom-2 end-2 transform translate-x-1/2 translate-y-1/2 border-2 border-solid border-current w-3 h-3 bg-danger rounded-circle"></span>
-									</div>
-								</div>
-								<div>
-									<span class="d-block text-sm font-semibold">
-										Heather Wright
-									</span>
-									<span class="d-block text-xs text-muted font-regular">
-										London, UK
-									</span>
-								</div>
-								<div class="ms-auto">
-									<i class="bi bi-chat"></i>
-								</div>
-							</a>
-						</li>
-					</ul>
+					
 					<!-- Push content down -->
 					<div class="mt-auto"></div>
 					<!-- User (md) -->
 					<ul class="navbar-nav">
 						<li class="nav-item">
 							<a class="nav-link" href="../../index.html">
-								<i class="bi bi-person-square"></i> Tienda
+								<i class="bi bi-bag"></i> Tienda
 							</a>
 						</li>
 						<li class="nav-item">
@@ -441,7 +363,7 @@
 										</td>
 										<td>
 											<span class="badge badge-lg badge-dot">
-												<i class="bg-warning"></i>Pendiente
+												<i class="bg-warning orange-warning"></i>Pendiente
 											</span>
 										</td>
 										<td class="text-end">
@@ -610,7 +532,7 @@
 										</td>
 										<td>
 											<span class="badge badge-lg badge-dot">
-												<i class="bg-warning"></i>Pendiente
+												<i class="bg-warning orange-warning"></i>Pendiente
 											</span>
 										</td>
 										<td class="text-end">
@@ -734,6 +656,7 @@
 
 	<script src="../../JS/zoom.js"></script>
 	<script src="JS/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
