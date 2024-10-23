@@ -157,7 +157,15 @@ h3 {
 }
 
 .sameStyle{
-  width: 342px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #B2072D;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.sameStyleInput{
+  width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: 2px solid #B2072D;
@@ -165,7 +173,7 @@ h3 {
 }
 
 .checkboxDiv{
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -207,6 +215,10 @@ h3 {
 }
 
 
+.inputText{
+  margin: 0;
+}
+
 .siguienteBtn{
   all: unset;
   color: rgb(255, 255, 255);
@@ -217,6 +229,19 @@ h3 {
   width: fit-content;
   margin: 0 auto;
   font-weight: 600;
+}
+
+.duetoCheckbox{
+  all: unset;
+  background: #FFF;
+  border: 2.5px solid #B2072D;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.duetoCheckbox:checked{
+  background-color: #B2072D;
 }
 
 

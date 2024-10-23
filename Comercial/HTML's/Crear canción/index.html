@@ -167,8 +167,8 @@
 						</select>
 
 						<div class="checkboxDiv">                            
-							<input type="checkbox" id="duetoCheckbox">
-							<label for="duetoCheckbox"><span>Dueto: Elige varias voces a la vez</span> <span class="lessOpacityTxt">por solo 28 € más (Impuestos incluidos)</span></label>
+							<input type="checkbox" id="duetoCheckbox" class="duetoCheckbox">
+							<label for="duetoCheckbox"><span class="checkmark"></span><span>Dueto: Elige varias voces a la vez</span> <span class="lessOpacityTxt">por solo 28 € más (Impuestos incluidos)</span></label>
 						</div>
 
 						<label for="tipoVoces"><h3>Voces</h3></label>
@@ -186,7 +186,7 @@
 						<div class="addVoiceClass">
 							<label for="addUserVoice"><h3>Añade tu voz</h3></label>
 							<div >
-								<input type="checkbox" name="addUserVoice" id="addUserVoice">
+								<input type="checkbox" name="addUserVoice" id="addUserVoice" class="duetoCheckbox">
 								<label for="addUserVoice"><span>Añade tu voz</span> <span class="lessOpacityTxt">por solo 29 € más (Impuestos incluidos)</span> </label>
 							</div>
 							<label for="" style="color: #D06B81; margin: 0;">Sube tu propia voz *</label>
@@ -221,38 +221,77 @@
 						<div class="addVoiceClass">
 							<label for=""><h3>Recibe también</h3></label>
 							<div>
-								<input type="checkbox" name="partExclusiva" id="partExclusiva">
+								<input type="checkbox" name="partExclusiva" id="partExclusiva" class="duetoCheckbox">
 								<label for="partExclusiva"><span>Partitura exclusiva</span> <span class="lessOpacityTxt">por solo 75 € más (Impuestos incluidos)</span></label>
 							</div>
 							<div>
-								<input type="checkbox" name="tablGuitarra" id="tablGuitarra">
+								<input type="checkbox" name="tablGuitarra" id="tablGuitarra" class="duetoCheckbox">
 								<label for="tablGuitarra"><span>Tablaturas Guitarra</span> <span class="lessOpacityTxt">por solo 75 € más (Impuestos incluidos)</span></label>
 							</div>
 							<div>
-								<input type="checkbox" name="tablUkelele" id="tablUkelele">
+								<input type="checkbox" name="tablUkelele" id="tablUkelele" class="duetoCheckbox">
 								<label for="tablUkelele"><span>Tablaturas Ukelele o Bajo</span> <span class="lessOpacityTxt">por solo 75 € más (Impuestos incluidos)</span></label>
 							</div>
 							<div>
-								<input type="checkbox" name="letraParaRegalar" id="letraParaRegalar">
+								<input type="checkbox" name="letraParaRegalar" id="letraParaRegalar" class="duetoCheckbox">
 								<label for="letraParaRegalar"><span>Letra con diseño para regalar. Regalo: QR con la canción</span>
 									<span class="lessOpacityTxt">por solo 5 € más (Impuestos incluidos)</span></label>
 							</div>
 							<div>
-								<input type="checkbox" name="CuadroReproductor" id="CuadroReproductor">
+								<input type="checkbox" name="CuadroReproductor" id="CuadroReproductor" class="duetoCheckbox">
 								<label for="CuadroReproductor"><span>Cuadro Reproductor Musical. Regalo: QR con la canción </span>
 									<span class="lessOpacityTxt">por solo 9 € más (Impuestos incluidos)</span></label>
 							</div>
 							<div>
-								<input type="checkbox" name="verInstrumental" id="verInstrumental">
+								<input type="checkbox" name="verInstrumental" id="verInstrumental" class="duetoCheckbox">
 								<label for="verInstrumental"><span>Versión instrumental</span> <span class="lessOpacityTxt">por solo 28 € más (Impuestos incluidos)</span></label>
 							</div>
 							<div>
-								<input type="checkbox" name="subimosSpotify" id="subimosSpotify">
+								<input type="checkbox" name="subimosSpotify" id="subimosSpotify" class="duetoCheckbox">
 								<label for="subimosSpotify"><span>Subimos tu canción a Spotify</span> <span class="lessOpacityTxt">por solo 28 € más (Impuestos incluidos)</span></label>
 							</div>
 						</div>
 							
-							
+							<div class="addVoiceClass">
+								<label for=""><h3>Ayudanos a mejorar a mejorar la calidad de tu producto</h3></label>
+								<label for="escribirLetra" class="inputText">Escribe tú la letra de la canción para dedicar</label>
+								<input type="text" name="escribirLetra" id="escribirLetra" placeholder="Letra de la canción" class="sameStyleInput">
+								<label for=""><h3>O</h3></label>
+								<label for=""><h3>Ayudanos a mejorar a mejorar la calidad 
+									de tu producto con estas preguntas</h3>
+								</label>
+								<label for="" class="inputText">¿Qué quieres transmitir con nuestros regalos musicales?</label>
+								<input type="text" name="" id="" placeholder="¿Cuál es tu propósito o motivo?" class="sameStyleInput">
+								<label for="" class="inputText">Nombre de la persona a la que quieres regalar una canción</label>
+								<input type="text" name="" id="" placeholder="Juan David..." class="sameStyleInput">
+								<label for="" class="inputText">¿Qué vínculo tienes con la persona a la que dedicarás la 
+									canción personalizada?</label>
+								<input type="text" name="" id="" placeholder="Somos amigos..." class="sameStyleInput">
+								<label for="" class="inputText">¿Cuándo y cómo se conocieron?</label>
+								<input type="text" name="" id="" placeholder="Nos conicimos en la universidad en el 2021..." class="sameStyleInput">
+								<label for="" class="inputText">¿Cómo es físicamente?</label>
+								<input type="text" name="" id="" placeholder="Es alto, pelo rubio..." class="sameStyleInput">
+								<label for="" class="inputText">¿Y por dentro? Sus cualidades, debilidades, pasiones etc.</label>
+								<input type="text" name="" id="" placeholder="Es una persona amable, le gusta..." class="sameStyleInput">
+								<label for="" class="inputText">¿Cuáles son sus diferencias?</label>
+								<input type="text" name="" id="" placeholder="Diferimos en cuanto..." class="sameStyleInput">
+								<label for="" class="inputText">¿Qué has aprendido de la persona a la que quieres dedicar canciones?</label>
+								<input type="text" name="" id="" placeholder="De él/ella he aprendido que..." class="sameStyleInput">
+								<label for="" class="inputText">Cuéntanos anécdotas, momentos especiales, viajes inolvidables…con esa persona.</label>
+								<input type="text" name="" id="" placeholder="Nuestra anécdota más memorable fue cuando..." class="sameStyleInput">
+								<label for="" class="inputText">Qué planes tienes para el futuro con la persona a la que quieres regalar una canción bonita para dedicar?</label>
+								<input type="text" name="" id="" placeholder="Pensamos realizar un viaje a..." class="sameStyleInput">
+								<label for="" class="inputText">¿Tienen alguna palabra o frase propia de su lenguaje?</label>
+								<input type="text" name="" id="" placeholder="No tengo ninguna | Sí, la palabra es..." class="sameStyleInput">
+								<label for="" class="inputText">Indícanos fechas señaladas. ¿Cuándo fueron? ¿Qué se celebraba?</label>
+								<input type="text" name="" id="" placeholder="En Julio de 2020 viajamos a... para celebrar..." class="sameStyleInput">
+								<label for="" class="inputText">Indícanos cosas que te recuerden a la persona a la que quieres dedicar una canción.</label>
+								<input type="text" name="" id="" placeholder="Me recuerda..." class="sameStyleInput">
+								<label for="" class="inputText">Escríbele una carta con lo que quieras decirle, déjate llevar por tus sentimientos.</label>
+								<input type="text" name="" id="" placeholder="Hola,  en esta quiera quiero expresar..." class="sameStyleInput">
+								
+
+							</div>
 						<button class="siguienteBtn">Siguiente</button>
 					</form>
 				</div>
