@@ -140,6 +140,12 @@ p{
   margin: 0 auto;
   gap: 30px;
 }
+
+.correctStyle{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 select option[disabled] {
   display: none;
 }
