@@ -1,4 +1,4 @@
-# Requisitos de Software Actualizados para cancionesparadedicar
+# Requisitos de Software para cancionesparadedicar
 
 ## 1. Requisitos Funcionales
 
@@ -12,6 +12,7 @@
 - Implementar un sistema de compra seguro.
 - Ofrecer envío instantáneo vía email o WhatsApp.
 - Permitir escuchar el resultado antes de pagar.
+- Recibir confirmación por correo electrónico.
 
 ### 1.3 Características Adicionales
 
