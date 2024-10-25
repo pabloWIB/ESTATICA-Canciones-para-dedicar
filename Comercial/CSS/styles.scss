@@ -39,13 +39,16 @@
           height: 4rem;
           width: 100px;
           max-width: 100px;
+          background-color: red;
           .swiper-button-next:after,
-          .swiper-button-prev:after {
+          .swiper-button-prev:after,
+          .swiper-button-next2:after,
+          .swiper-button-prev2:after {
             font-size: 20px !important;
             color: #3d3d3d;
           }
-          .siguiente:hover{
-            color: greenyellow;
+          .siguiente2{
+            background-color: green;
           }
         }
       }
@@ -61,8 +64,8 @@
           margin: auto;
         }
       }
-      .swiper-wrapper{
-        padding-left: 1.6rem;
+      .swiper-wrapper {
+        padding: 0rem 0rem .25rem 1.6rem;
         .specialBoxSlider {
           border-radius: 16px;
           border: 1px solid #d06b81;
@@ -83,12 +86,241 @@
                 border-radius: 12px;
               }
             }
-            p{
+            p {
               cursor: default;
             }
-            p::selection{
+            p::selection {
               background: none;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .brand_slider_main {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    .container {
+      .swiper {
+        width: calc(100%);
+        .text-buttons {
+          width: 97.5%;
+          padding-top: 0.35rem;
+          padding-bottom: 0.35rem;
+          .buttons {
+            height: auto;
+            max-width: 90px;
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+              font-size: 15px !important;
+              color: #3d3d3d;
+            }
+          }
+        }
+        .brand_item {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: center;
+          gap: 0.1em;
+          img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin: auto;
+          }
+        }
+        .swiper-wrapper {
+          padding-left: 0.75rem;
+          .swiper-slide{
+            .specialBoxSlider {
+              padding: 0.5rem 0rem;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .brand_slider_main {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    .container {
+      .swiper {
+        width: calc(100%);
+        .text-buttons {
+          width: 97.5%;
+          padding-top: 0rem;
+          padding-bottom: 0rem;
+          .buttons {
+            height: auto;
+            max-width: 85px;
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+              font-size: 14px !important;
+              color: #3d3d3d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-n3 {
+  display: flex;
+  flex-flow: column wrap;
+  > :nth-child(1) {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    > :nth-child(1) {
+      text-align: center;
+    }
+    > :nth-child(2) {
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column wrap;
+      gap: 1.25rem;
+      > div {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1.85px solid #d06b81;
+        background: #fff;
+        display: flex;
+        flex-flow: column wrap;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        justify-content: center;
+        > :nth-child(1) {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          width: 98%;
+          cursor: pointer;
+          > :nth-child(1) {
+            width: 90%;
+          }
+          > :nth-child(2) {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            img {
+              cursor: pointer;
+              width: 100%;
+            }
+          }
+        }
+        > :nth-child(2) {
+          width: 98%;
+          position: absolute;
+          transition: 0s;
+          transform: translateX(-125%);
+        }
+      }
+      .add-info-get {
+        padding: 0.75rem 0rem;
+        > :nth-child(1) {
+          > :nth-child(2) {
+            margin-top: 1px;
+          }
+        }
+        > :nth-child(2) {
+          transition: 0.5s;
+          transform: translateX(0%);
+          position: relative;
+          animation: ease;
+          margin: 0 auto;
+          > div {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .section-n3 {
+    > :nth-child(1) {
+      > :nth-child(2) {
+        gap: 1rem;
+        > div {
+          > :nth-child(1) {
+            cursor: pointer;
+            > :nth-child(1) {
+              width: 95%;
+            }
+            > :nth-child(2) {
+              img {
+                max-width: 22.5px;
+              }
+            }
+          }
+          > :nth-child(2) {
+            position: absolute;
+            transition: 0s;
+            transform: translateX(-125%);
+          }
+        }
+        .add-info-get {
+          padding: 0.75rem 0rem;
+          > :nth-child(1) {
+            > :nth-child(2) {
+              margin-top: 1px;
+            }
+          }
+          > :nth-child(2) {
+            transition: 0.5s;
+            transform: translateX(0%);
+            position: relative;
+            animation: ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .section-n3 {
+    > :nth-child(1) {
+      > :nth-child(2) {
+        gap: 1rem;
+        > div {
+          > :nth-child(1) {
+            cursor: pointer;
+            > :nth-child(1) {
+              width: 87.5%;
+            }
+            > :nth-child(2) {
+              img {
+                max-width: 20px;
+              }
+            }
+          }
+        }
+        .add-info-get {
+          padding: 0.275rem 0rem;
+          > :nth-child(1) {
+            > :nth-child(2) {
+              margin-top: 1px;
+            }
+          }
+          > :nth-child(2) {
+            transition: 0.5s;
+            transform: translateX(0%);
+            position: relative;
+            animation: ease;
           }
         }
       }
